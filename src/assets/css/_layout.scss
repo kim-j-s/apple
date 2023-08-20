@@ -1,0 +1,179 @@
+/* layout */
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  display: none;
+}
+
+/* header */
+
+
+/* footer */
+footer {
+  text-align: center;
+  height: 750px;
+  color: #fff;
+  background: url(../images/bg_footer.png) no-repeat center;
+
+  >.inner {
+    display: inline-flex;
+    width: 1520px;
+    padding-top: 150px;
+
+    .left {
+      flex: 1 1 0;
+      padding-right: 180px;
+      font-family: "GmarketSans", "돋움", dotum, sans-serif;
+      text-align: left;
+
+      .title {
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 72px;
+      }
+
+      .tel {
+        margin-top: 28px;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 36px;
+
+        .f {
+          padding-right: 10px;
+        }
+      }
+
+      .footer_logo {
+        margin-top: 24px;
+      }
+
+      .footer_links {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-top: 42px;
+
+        .blog {
+          width: 38px;
+          height: 32px;
+          background: url(../images/icon/icon_blog_w.png) no-repeat center;
+        }
+
+        .reservation {
+          width: 34px;
+          height: 32px;
+          background: url(../images/icon/icon_naver_reservation_w.png) no-repeat center;
+        }
+
+        .loc {
+          width: 26px;
+          height: 36px;
+          background: url(../images/icon/icon_location_w.png) no-repeat center;
+        }
+
+        .inquiry {
+          width: 28px;
+          height: 34px;
+          background: url(../images/icon/icon_inquiry_w.png) no-repeat center;
+        }
+
+        .doc {
+          width: 26px;
+          height: 32px;
+          background: url(../images/icon/icon_doc_w.png) no-repeat center;
+        }
+      }
+
+      .footer_info {
+        margin-top: 48px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 34px;
+      }
+    }
+
+    .right {
+      flex: 1 1 0;
+      padding-left: 60px;
+
+      .inp {
+        +.inp {
+          margin-top: 20px;
+        }
+      }
+
+      .textarea {
+        margin-top: 20px;
+      }
+
+      .inquiry_chk {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 18px;
+      }
+
+      .btn_area {
+        margin-top: 18px;
+      }
+    }
+  }
+}
+
+/* footer */
+
+
+/* flaoting_menu */
+.flaoting_menu {
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  z-index: 50;
+  padding: 28px 12px;
+  border-radius: 50px;
+  background-color: #d0d5e8;
+
+  a {
+    display: block;
+    text-align: center;
+    font-family: "GmarketSans", "돋움", dotum, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    +a {
+      margin-top: 30px;
+    }
+  }
+
+  .flaoting_menu_blog {
+    padding-top: 42px;
+    background-image: url(../images/icon/icon_blog.png);
+  }
+
+  .flaoting_menu_reservation {
+    padding-top: 44px;
+    background-image: url(../images/icon/icon_naver_reservation.png);
+  }
+
+  .flaoting_menu_inquiry {
+    padding-top: 44px;
+    background-image: url(../images/icon/icon_inquiry.png);
+  }
+
+}
+
+/* flaoting_menu */
+
+
+
+/* layout */
