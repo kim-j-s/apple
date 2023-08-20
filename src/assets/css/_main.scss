@@ -665,15 +665,54 @@ main.container {
     }
 
     &.ty4 {
-      display: none;
+      height: auto;
+      padding-bottom: 50px;
 
-      .main_content_title P {
+      .main_content_title {
         width: auto;
+        padding: 100px 24px 0 24px;
+
+        .title {
+          font-size: 30px;
+          line-height: 36px;
+        }
+
+        .desc {
+          margin-top: 18px;
+          font-size: 12px;
+          line-height: 18px;
+
+          br {
+            display: none;
+
+            &.m {
+              display: block;
+            }
+          }
+
+          .m {
+            font-weight: 500;
+          }
+        }
+
+        .more {
+          margin-top: 10px;
+
+          a {
+            // display: inline-block;
+            // font-family: "GmarketSans", "돋움", dotum, sans-serif;
+            // font-weight: 500;
+            font-size: 11px;
+            line-height: 18px;
+            // color: #ccc;
+          }
+        }
+
       }
     }
 
     &.ty5 {
-      display: none;
+      padding: 75px 0;
     }
 
     &.ty6 {
