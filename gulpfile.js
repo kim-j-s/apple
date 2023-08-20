@@ -82,14 +82,6 @@ function devFont() {
 }
 
 function devStyles() {
-  // var processors = [
-  //   autoprefixer({
-  //     browsers: 'last 1 version'
-  //   }),
-  //   pxtorem({
-  //     replace: false
-  //   })
-  // ];
   const px2rem_settings = {
     rootValue: 16,
     propWhiteList: [],
@@ -101,10 +93,10 @@ function devStyles() {
   ])
     .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
 
-    // .pipe(postcss([
-    //   autoprefixer(),
-    //   pxtorem(px2rem_settings)
-    // ]))
+    .pipe(postcss([
+      autoprefixer(),
+      pxtorem(px2rem_settings)
+    ]))
     .pipe(dest(options.paths.dist.css));
 }
 

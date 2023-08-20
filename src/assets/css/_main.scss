@@ -537,10 +537,7 @@ main.container {
   .left {
     flex: 1 1 0;
 
-    .mapdmp {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .maparea {
       width: 100%;
       height: 650px;
       background: #ccc;
@@ -582,6 +579,7 @@ main.container {
           text-align: justify;
           overflow: hidden;
           letter-spacing: -3px;
+          text-indent: 3px;
 
           &::after {
             content: '';
@@ -638,6 +636,28 @@ main.container {
 @media screen and (max-width: 1199px) {
 
   .main_content {
+
+    &.ty1,
+    &.ty3,
+    &.ty5 {
+      .main_content_title {
+
+        text-align: center;
+
+        .title {
+          font-size: 30px;
+          line-height: 36px;
+        }
+
+        .desc {
+          margin-top: 12px;
+          font-size: 12px;
+          line-height: 18px;
+        }
+
+      }
+    }
+
     &.ty1 {
       padding: 75px 0;
     }
@@ -713,36 +733,26 @@ main.container {
 
     &.ty5 {
       padding: 75px 0;
-    }
 
-    &.ty6 {
-      display: none;
-    }
-
-    &.ty1,
-    &.ty3,
-    &.ty5 {
       .main_content_title {
-
-        text-align: center;
-
-        .title {
-          font-size: 30px;
-          line-height: 36px;
-        }
-
         .desc {
-          margin-top: 12px;
-          font-size: 12px;
-          line-height: 18px;
+          br {
+            display: none;
 
-          .m {
-            font-weight: 500;
+            &.m {
+              display: block;
+            }
           }
         }
 
       }
     }
+
+    &.ty6 {
+      padding: 0;
+    }
+
+
   }
 
 
@@ -969,14 +979,149 @@ main.container {
     }
   }
 
+  .main_content_item05_department {
+    margin-top: 22px;
+    padding: 0 15px;
+    text-align: center;
 
-  footer {
-    display: none;
+    >.inner {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+
+      >span {
+        padding-top: 2px;
+        font-size: 12px;
+        line-height: 23px;
+        letter-spacing: -1px;
+
+        &:not(:last-child) {
+          margin-right: 16px;
+
+          &::after {
+            right: -9px;
+            height: 11px;
+            border-left: 1px solid #fff;
+
+          }
+        }
+      }
+    }
+
   }
 
-  .flaoting_menu {
-    display: none;
+  .main_content_item05_doctor {
+    margin-top: 24px;
+
+    .inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 34px 0;
+
+      &:hover {
+        .item {
+          opacity: 1;
+
+          &:hover {
+            opacity: 1;
+
+            .cover {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .item {
+      a {
+
+        >.who {
+          height: auto;
+          padding-top: 10px;
+          font-size: 12px;
+          line-height: 1;
+
+          .name {
+            position: relative;
+            top: 2px;
+            padding-right: 6px;
+            font-size: 18px;
+            line-height: 1;
+          }
+
+        }
+      }
+    }
   }
+
+  .main_content_item06 {
+    display: block;
+
+    .left {
+      flex: 1 1 0;
+
+      .maparea {
+        width: 100%;
+        height: 260px;
+        border-top: 1px solid #c2c2c2;
+        border-bottom: 1px solid #c2c2c2;
+        background: #ccc;
+      }
+    }
+
+    .right {
+      flex: 1 1 0;
+      padding: 50px 42px;
+
+      .title {
+        font-size: 25px;
+
+        ~.title {
+          margin-top: 18px;
+        }
+      }
+
+      .time_list {
+        margin-top: 20px;
+
+        li {
+          font-size: 15px;
+          line-height: 18px;
+
+          +li {
+            margin-top: 10px;
+          }
+
+          .date {
+            width: 65px;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+          }
+
+          .time {
+            padding-left: 10px;
+          }
+        }
+
+      }
+
+      .addr {
+        margin-top: 18px;
+        font-size: 15px;
+        line-height: 18px;
+      }
+
+      .call {
+        margin-top: 20px;
+      }
+
+    }
+  }
+
+
+
+
 
 }
 

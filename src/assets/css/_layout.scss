@@ -22,10 +22,38 @@ footer {
 
   >.inner {
     display: inline-flex;
+    flex-direction: row-reverse;
     width: 1520px;
     padding-top: 150px;
 
     .left {
+      flex: 1 1 0;
+      padding-left: 60px;
+
+      .inp {
+        +.inp {
+          margin-top: 20px;
+        }
+      }
+
+      .textarea {
+        margin-top: 20px;
+      }
+
+      .inquiry_chk {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 18px;
+      }
+
+      .btn_area {
+        margin-top: 18px;
+      }
+    }
+
+    .right {
       flex: 1 1 0;
       padding-right: 180px;
       font-family: "GmarketSans", "돋움", dotum, sans-serif;
@@ -61,31 +89,31 @@ footer {
         .blog {
           width: 38px;
           height: 32px;
-          background: url(../images/icon/icon_blog_w.png) no-repeat center;
+          background: url(../images/icon/icon_blog_w.png) no-repeat center / cover;
         }
 
         .reservation {
           width: 34px;
           height: 32px;
-          background: url(../images/icon/icon_naver_reservation_w.png) no-repeat center;
+          background: url(../images/icon/icon_naver_reservation_w.png) no-repeat center / cover;
         }
 
         .loc {
           width: 26px;
           height: 36px;
-          background: url(../images/icon/icon_location_w.png) no-repeat center;
+          background: url(../images/icon/icon_location_w.png) no-repeat center / cover;
         }
 
         .inquiry {
           width: 28px;
           height: 34px;
-          background: url(../images/icon/icon_inquiry_w.png) no-repeat center;
+          background: url(../images/icon/icon_inquiry_w.png) no-repeat center / cover;
         }
 
         .doc {
           width: 26px;
           height: 32px;
-          background: url(../images/icon/icon_doc_w.png) no-repeat center;
+          background: url(../images/icon/icon_doc_w.png) no-repeat center / cover;
         }
       }
 
@@ -97,32 +125,6 @@ footer {
       }
     }
 
-    .right {
-      flex: 1 1 0;
-      padding-left: 60px;
-
-      .inp {
-        +.inp {
-          margin-top: 20px;
-        }
-      }
-
-      .textarea {
-        margin-top: 20px;
-      }
-
-      .inquiry_chk {
-        display: flex;
-        gap: 15px;
-        align-items: center;
-        justify-content: center;
-        margin-top: 18px;
-      }
-
-      .btn_area {
-        margin-top: 18px;
-      }
-    }
   }
 }
 
@@ -135,9 +137,12 @@ footer {
   right: 50px;
   bottom: 100px;
   z-index: 50;
-  padding: 28px 12px;
-  border-radius: 50px;
-  background-color: #d0d5e8;
+
+  .inner {
+    padding: 28px 12px;
+    border-radius: 50px;
+    background-color: #d0d5e8;
+  }
 
   a {
     display: block;
@@ -175,5 +180,177 @@ footer {
 /* flaoting_menu */
 
 
+
+@media screen and (max-width: 1199px) {
+
+  footer {
+    height: auto;
+    padding: 75px 24px;
+    text-align: left;
+    background: url(../images/bg_footer_m.png) no-repeat top center / 100% 100%;
+
+    >.inner {
+      display: block;
+      width: auto;
+      padding-top: 0;
+
+      .left {
+        padding-left: 0;
+
+        .inp {
+          +.inp {
+            margin-top: 10px;
+          }
+        }
+
+        .textarea {
+          margin-top: 10px;
+        }
+
+        .inquiry_chk {
+          gap: 8px;
+          margin-top: 8px;
+        }
+
+        .btn_area {
+          margin-top: 8px;
+        }
+      }
+
+      .right {
+        padding-top: 45px;
+        padding-right: 0;
+
+        .title {
+          font-size: 30px;
+          line-height: 36px;
+        }
+
+        .tel {
+          margin-top: 14px;
+          font-size: 15px;
+          line-height: 18px;
+
+          .f {
+            padding-right: 5px;
+          }
+        }
+
+        .footer_logo {
+          margin-top: 12px;
+
+          img {
+            width: 99px;
+          }
+        }
+
+        .footer_links {
+          gap: 25px;
+          margin-top: 20px;
+
+          .blog {
+            width: 19px;
+            height: 16px;
+          }
+
+          .reservation {
+            width: 17px;
+            height: 16px;
+          }
+
+          .loc {
+            width: 13px;
+            height: 18px;
+          }
+
+          .inquiry {
+            width: 14px;
+            height: 17px;
+          }
+
+          .doc {
+            width: 13px;
+            height: 16px;
+          }
+        }
+
+        .footer_info {
+          margin-top: 24px;
+          font-size: 10px;
+          line-height: 16px;
+        }
+      }
+
+    }
+  }
+
+
+
+  .flaoting_menu {
+    right: auto;
+    bottom: 15px;
+    width: 100%;
+    padding: 0 55px;
+
+    .inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      height: 40px;
+      padding: 0 35px;
+      border-radius: 50px;
+      border: 1px solid #6993cd;
+      background-color: #d0d5e8;
+    }
+
+    a {
+      // display: block;
+      // text-align: center;
+      // font-family: "GmarketSans", "돋움", dotum, sans-serif;
+      // font-weight: 500;
+      // font-size: 14px;
+      // line-height: 18px;
+      // color: #333;
+      // background-repeat: no-repeat;
+      // background-position: top center;
+      font-size: 0;
+      background-size: cover;
+
+      +a {
+        margin-top: 0;
+      }
+    }
+
+    .flaoting_menu_blog {
+      width: 25px;
+      height: 21px;
+      padding-top: 0;
+      background-image: url(../images/icon/icon_blog_m.png);
+    }
+
+    .flaoting_menu_reservation {
+      width: 23px;
+      height: 21px;
+      padding-top: 0;
+      background-image: url(../images/icon/icon_naver_reservation_m.png);
+    }
+
+    .flaoting_menu_loc {
+      width: 17px;
+      height: 23px;
+      background-image: url(../images/icon/icon_location_m.png);
+    }
+
+    .flaoting_menu_inquiry {
+      width: 18px;
+      height: 22px;
+      padding-top: 0;
+      background-image: url(../images/icon/icon_inquiry_m.png);
+    }
+
+  }
+
+}
 
 /* layout */

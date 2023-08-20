@@ -126,13 +126,17 @@ body {
   position: relative;
   min-width: 1520px;
   font-family: 'HelveticaNeue', 'Noto Sans Kr', sans-serif;
-  letter-spacing: -1px;
+  letter-spacing: -0.4px;
   color: #333;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
 
 @media screen and (max-width: 1199px) {
+  html {
+    font-size: calc(16 / 375 * 100vw) !important;
+  }
+
   body {
     min-width: 0;
   }
@@ -223,6 +227,17 @@ textarea {
 
 ::-ms-reveal {
   display: none;
+}
+
+@media screen and (max-width: 1199px) {
+
+  /* placeholder */
+  /* IE10 이상을 위한 css */
+  ::placeholder {
+    font-size: 12px;
+    opacity: 1;
+  }
+
 }
 
 

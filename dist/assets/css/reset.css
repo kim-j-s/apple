@@ -11,7 +11,6 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -124,15 +123,18 @@ html {
 
 body {
   position: relative;
-  min-width: 1520px;
+  min-width: 95rem;
   font-family: "HelveticaNeue", "Noto Sans Kr", sans-serif;
-  letter-spacing: -1px;
+  letter-spacing: -0.025rem;
   color: #333;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
 
 @media screen and (max-width: 1199px) {
+  html {
+    font-size: 4.2666666667vw !important;
+  }
   body {
     min-width: 0;
   }
@@ -188,7 +190,7 @@ textarea {
 }
 
 select {
-  -webkit-border-radius: 0px;
+  -webkit-border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -206,10 +208,38 @@ textarea {
 
 /* placeholder */
 /* IE10 이상을 위한 css */
+::-webkit-input-placeholder {
+  font-family: "GmarketSans", "돋움", dotum, sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #575757;
+  opacity: 1;
+}
+::-moz-placeholder {
+  font-family: "GmarketSans", "돋움", dotum, sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #575757;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  font-family: "GmarketSans", "돋움", dotum, sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #575757;
+  opacity: 1;
+}
+::-ms-input-placeholder {
+  font-family: "GmarketSans", "돋움", dotum, sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #575757;
+  opacity: 1;
+}
 ::placeholder {
   font-family: "GmarketSans", "돋움", dotum, sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #575757;
   opacity: 1;
 }
@@ -222,6 +252,30 @@ textarea {
   display: none;
 }
 
+@media screen and (max-width: 1199px) {
+  /* placeholder */
+  /* IE10 이상을 위한 css */
+  ::-webkit-input-placeholder {
+    font-size: 0.75rem;
+    opacity: 1;
+  }
+  ::-moz-placeholder {
+    font-size: 0.75rem;
+    opacity: 1;
+  }
+  :-ms-input-placeholder {
+    font-size: 0.75rem;
+    opacity: 1;
+  }
+  ::-ms-input-placeholder {
+    font-size: 0.75rem;
+    opacity: 1;
+  }
+  ::placeholder {
+    font-size: 0.75rem;
+    opacity: 1;
+  }
+}
 /* font */
 @font-face {
   font-family: "Noto Sans Kr";
