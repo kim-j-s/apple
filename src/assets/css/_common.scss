@@ -15,13 +15,10 @@
 }
 
 
-.fontNoto {
-  font-family: "Noto Sans Kr", "돋움", dotum, sans-serif;
-}
 
-.fontG {
-  font-family: "GmarketSans", "돋움", dotum, sans-serif;
-}
+
+
+
 
 /* common btn */
 
@@ -162,7 +159,33 @@
 
 /* common input */
 
+/* display */
+.d_pc {
+  
+}
+.d_mo {
+  display: none;  
+}
+
+.br_mo {
+  display: none;
+}
+/* display */
+
 @media screen and (max-width: 1199px) {
+  .d_pc {
+    display: none;
+  }
+  .d_mo {
+    display: block;
+  }
+  .br_pc {
+    display: none;
+  }
+  .br_mo {
+    display: block;
+  }
+
   .inp {
     input {
       height: 35px;

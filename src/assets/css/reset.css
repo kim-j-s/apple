@@ -323,3 +323,11 @@ textarea {
     url("../../fonts/GmarketSansBold.woff") format("woff"),
     url("../../fonts/GmarketSansBold.woff2") format("woff2");
 }
+
+.fontNoto {
+  font-family: "Noto Sans Kr", "돋움", dotum, sans-serif;
+}
+
+.fontG {
+  font-family: "GmarketSans", "돋움", dotum, sans-serif;
+}

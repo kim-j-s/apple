@@ -7,7 +7,27 @@ header {
   left: 0;
   z-index: 100;
   width: 100%;
-  display: none;
+  > .inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1620px;
+    margin: 0 auto;
+    .main_logo {
+      flex: none;
+    }
+    .gnb_wrap {
+      flex: 1 1 0;
+      .gnb_wrap_open {
+        display: none;
+      }
+    }
+  }
+}
+
+.gnb {
+  display: flex;
+
 }
 
 /* header */
@@ -127,7 +147,6 @@ footer {
 
   }
 }
-
 /* footer */
 
 
@@ -176,10 +195,7 @@ footer {
   }
 
 }
-
 /* flaoting_menu */
-
-
 
 @media screen and (max-width: 1199px) {
 
@@ -284,8 +300,6 @@ footer {
     }
   }
 
-
-
   .flaoting_menu {
     right: auto;
     bottom: 15px;
@@ -350,7 +364,6 @@ footer {
     }
 
   }
-
 }
 
 /* layout */
