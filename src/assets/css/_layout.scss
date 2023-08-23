@@ -7,18 +7,53 @@ header {
   left: 0;
   z-index: 100;
   width: 100%;
+  height: 120px;
   overflow: hidden;
+  transition: 0.3s ease-out;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: 0.3s ease-out;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 0;
+    background-color: #e3e3e3;
+    transition: 0.3s ease-out;
+  }
+  &:hover {
+    height: 450px;
+    &::before {
+      background-color: #254f89;
+    }
+    &::after {
+      height: 330px;
+    }
+  }
+  &.active {
+    &::before {
+      background-color: #254f89;
+    }
+  }
   > .inner {
     position: relative;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 1620px;
     margin: 0 auto;
     padding-left: 395px;
-    .main_logo {
-      // flex: none;
-    }
     .main_logo {
       position: absolute;
       top: 28px;
@@ -39,11 +74,19 @@ header {
 }
 
 .gnb {
+  position: relative;
   display: flex;
   align-items: stretch;
   width: 100%;
-  height: 120px;
-  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    left: -545px;
+    bottom: 0;
+    width: 545px;
+    height: 330px;
+    background: url(../images/bg_gnb_pc.png) no-repeat;
+  }
 
   > li {
     position: relative;
@@ -57,30 +100,31 @@ header {
       font-size: 24px;
       text-align: center;
       line-height: 120px;
-      color: #fff;
+      color: #fff;      
     }
     .cont {
       height: calc(100% - 120px);
       padding: 30px 0;
-      opacity: 0;
-      visibility: hidden;
-      transform: scaleY(0);
-      transition: 0.3s;
-      transform-origin: top center;
       .gnb_list_dept {
         height: 100%;
         padding: 0 10%;
         border-left: 1px solid #bfbfbf;
         > li {
           a {
-            display: block;
-            text-align: left;
+            display: block;            
+            font-weight: 200;
             font-size: 18px;
-            line-height: 32px;
+            line-height: 24px;
             color: #333;
+            text-align: left;
+            transition: 0.3s;
+            &:hover {
+              font-weight: 500;
+              color: #008fd5;
+            }
           }
           + li {
-            margin-top: 10px;
+            margin-top: 13px;
           }
         }
       }
@@ -94,28 +138,7 @@ header {
     }
   }
 
-  &:hover {
-    height: auto;
-    > li {
-      .cont {
-        opacity: 1;
-        visibility: visible;
-        transform: scaleY(1);
-        
-      }
-    }
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    width: 100vw;
-    height: calc(100% - 120px);
-    background-color: #e3e3e3;
-    transform: translateX(-50%);
-  }
+  
 
 }
 

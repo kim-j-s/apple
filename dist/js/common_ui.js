@@ -29,6 +29,7 @@ var ui = {
    */
   fxInit: function () {
     ui.fxEventWindow();
+    ui.fxCheckScroll();
   },
   /**
    * comment  : 윈도우 이벤트
@@ -56,6 +57,17 @@ var ui = {
       }
     })
   },
+  fxCheckScroll: function () {
+    // var beforePositon = 0;
+    ui.window.$this.on({
+      'load': function () {
+        (ui.window.scrollTop > 0) ? $('header').addClass('active') : $('header').removeClass('active');
+      },
+      'scroll': function () {
+        (ui.window.scrollTop > 0) ? $('header').addClass('active') : $('header').removeClass('active');
+      }
+    })
+  },
 }
 
 // 공유하기 url 복사
@@ -76,16 +88,6 @@ function CopyUrlToClipboard() {
 }
 function clearToast() {
   $('.ps-toast-msg').removeClass('on');
-}
-
-// 상품상세 이미지 교체
-function thumbnail() {
-  $('.ps-item--viewer-list a').on('click', function () {
-    $(this).closest('.ps-item--viewer-list').find('.item').removeClass('on');
-    $(this).closest('.item').addClass('on');
-    var img = $(this).find('img').attr('src');
-    $('.ps-item--viewer').find('img').attr('src', img);
-  });
 }
 
 // slider
@@ -111,11 +113,12 @@ $(function () {
   // 공유하기 url 복사
   CopyUrlToClipboard();
 
-  // 상품상세 이미지 교체
-  thumbnail();
 
   // slider
   slide();
+
+
+
 
   AOS.init();
 

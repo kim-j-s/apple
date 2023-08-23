@@ -713,7 +713,7 @@ main.container {
     &.ty2 {
       height: auto;
       padding: 75px 0;
-      background: url(../images/main/main_02_01_m.png) no-repeat top center / 100% auto;
+      background: url(../images/main/main_02_01_m.png) no-repeat center / 100% auto;
 
       .main_content_title {
         .title {
@@ -901,7 +901,7 @@ main.container {
     flex-flow: row wrap;
     gap: 60px 30px;
 
-    display: none;
+    // display: none;
 
     .item {
       width: calc(50% - 15px);
