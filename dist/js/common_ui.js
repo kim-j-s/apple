@@ -118,9 +118,27 @@ $(function () {
   slide();
 
 
-
-
   AOS.init();
+
+  $('.gnb_wrap_open').on('click', function(){
+    if( $('.gnb').hasClass('active') ) {
+      
+      $('.gnb_cover, .gnb').removeClass('active');
+      $('.gnb > li').removeClass('active');
+    } else {
+      $('.gnb_cover, .gnb').addClass('active');
+      $('.gnb > li').eq(0).addClass('active');
+    }
+  });
+
+  $('.mo_gnb').on('click', function(){
+    $(this).closest('.gnb').find('li').removeClass('active');
+    $(this).closest('li').addClass('active');
+  });
+
+
+
+
 
 });
 
