@@ -1,78 +1,91 @@
+// Breakpoints
+$breakpoint-mobile: 800px;
+$breakpoint-tablet: 1199px;
+
+// Font
+$point-font: "GmarketSans", "돋움", dotum, sans-serif;
+
 @mixin input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
 }
 
 @mixin ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
+@mixin mobile {
+	@media screen and (max-width: #{$breakpoint-mobile}) {
+		@content;
+	}
+}
 
-
-
-
-
+@mixin tablet {
+	@media screen and (max-width: #{$breakpoint-tablet}) {
+		@content;
+	}
+}
 
 /* common btn */
 
 .btn_tel {
-  display: inline-block;
-  padding-left: 80px;
-  font-family: "GmarketSans", "돋움", dotum, sans-serif;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 54px;
-  color: #333;
-  background: url(../images/icon/icon_tel.png) no-repeat left center;
+	display: inline-block;
+	padding-left: 80px;
+	font-family: "GmarketSans", "돋움", dotum, sans-serif;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 54px;
+	color: #333;
+	background: url(../images/icon/icon_tel.png) no-repeat left center;
 }
 
 .btn_text {
-  display: inline-block;
-  font-weight: 200;
-  font-size: 18px;
-  line-height: 24px;
-  color: #fff;
+	display: inline-block;
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
 }
 
 .fotter_inquiry_btn {
-  display: block;
-  width: 100%;
-  height: 70px;
-  font-family: "GmarketSans", "돋움", dotum, sans-serif;
-  font-weight: 500;
-  font-size: 36px;
-  text-align: center;
-  color: #c8cde0;
-  border: 2px solid #c8cde0;
+	display: block;
+	width: 100%;
+	height: 70px;
+	font-family: "GmarketSans", "돋움", dotum, sans-serif;
+	font-weight: 500;
+	font-size: 36px;
+	text-align: center;
+	color: #c8cde0;
+	border: 2px solid #c8cde0;
 }
 
 @media screen and (max-width: 1199px) {
-  .btn_tel {
-    display: inline-block;
-    padding-left: 40px;
-    font-size: 24px;
-    line-height: 28px;
-    color: #333;
-    background: url(../images/icon/icon_tel.png) no-repeat left center / 25px auto;
-  }
+	.btn_tel {
+		display: inline-block;
+		padding-left: 40px;
+		font-size: 24px;
+		line-height: 28px;
+		color: #333;
+		background: url(../images/icon/icon_tel.png) no-repeat left center / 25px auto;
+	}
 
-  .btn_text {
-    font-size: 10px;
-    line-height: 12px;
-  }
+	.btn_text {
+		font-size: 10px;
+		line-height: 12px;
+	}
 
-  .fotter_inquiry_btn {
-    height: 35px;
-    font-size: 18px;
-    border: 1px solid #c8cde0;
-  }
+	.fotter_inquiry_btn {
+		height: 35px;
+		font-size: 18px;
+		border: 1px solid #c8cde0;
+	}
 
 }
 
@@ -82,158 +95,161 @@
 
 /* common input */
 .inp {
-  input {
-    display: block;
-    width: 100%;
-    height: 70px;
-    padding: 0 28px;
-    font-family: "GmarketSans", "돋움", dotum, sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    background-color: #e4ebf5;
-  }
+	input {
+		display: block;
+		width: 100%;
+		height: 70px;
+		padding: 0 28px;
+		font-family: "GmarketSans", "돋움", dotum, sans-serif;
+		font-weight: 300;
+		font-size: 24px;
+		background-color: #e4ebf5;
+	}
 }
 
 .textarea {
-  textarea {
-    display: block;
-    width: 100%;
-    height: 140px;
-    resize: none;
-    padding: 20px 28px;
-    font-family: "GmarketSans", "돋움", dotum, sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    background-color: #e4ebf5;
-  }
+	textarea {
+		display: block;
+		width: 100%;
+		height: 140px;
+		resize: none;
+		padding: 20px 28px;
+		font-family: "GmarketSans", "돋움", dotum, sans-serif;
+		font-weight: 300;
+		font-size: 24px;
+		background-color: #e4ebf5;
+	}
 }
 
 .inp_chk {
-  position: relative;
-  display: inline-flex;
+	position: relative;
+	display: inline-flex;
 
-  >input {
-    @include input;
+	>input {
+		@include input;
 
-    +.text {
-      position: relative;
-      padding-left: 24px;
-      font-weight: 200;
-      font-size: 18px;
-      line-height: 24px;
+		+.text {
+			position: relative;
+			padding-left: 24px;
+			font-weight: 200;
+			font-size: 18px;
+			line-height: 24px;
 
-      &::before {
-        content: '';
-        position: absolute;
-        top: 4px;
-        left: 0;
-        width: 16px;
-        height: 16px;
-        background-color: #fff;
-      }
+			&::before {
+				content: '';
+				position: absolute;
+				top: 4px;
+				left: 0;
+				width: 16px;
+				height: 16px;
+				background-color: #fff;
+			}
 
-      &::after {
-        content: '';
-        position: absolute;
-        top: 8px;
-        left: 3px;
-        display: none;
-        width: 10px;
-        height: 6px;
-        border-bottom: 2px solid #2c74d7;
-        border-left: 2px solid #2c74d7;
-        transform: rotate(315deg);
-      }
-    }
+			&::after {
+				content: '';
+				position: absolute;
+				top: 8px;
+				left: 3px;
+				display: none;
+				width: 10px;
+				height: 6px;
+				border-bottom: 2px solid #2c74d7;
+				border-left: 2px solid #2c74d7;
+				transform: rotate(315deg);
+			}
+		}
 
-    &:checked {
-      +.text {
-        &::after {
-          display: block;
-        }
-      }
-    }
+		&:checked {
+			+.text {
+				&::after {
+					display: block;
+				}
+			}
+		}
 
-  }
+	}
 }
 
 /* common input */
 
 /* display */
-.d_pc {
-  
-}
+.d_pc {}
+
 .d_mo {
-  display: none;  
+	display: none;
 }
 
 .br_mo {
-  display: none;
+	display: none;
 }
+
 /* display */
 
 @media screen and (max-width: 1199px) {
-  .d_pc {
-    display: none;
-  }
-  .d_mo {
-    display: block;
-  }
-  .br_pc {
-    display: none;
-  }
-  .br_mo {
-    display: block;
-  }
+	.d_pc {
+		display: none;
+	}
 
-  .inp {
-    input {
-      height: 35px;
-      padding: 0 10px;
-      font-size: 12px;
-    }
-  }
+	.d_mo {
+		display: block;
+	}
 
-  .textarea {
-    textarea {
-      height: 70px;
-      padding: 10px;
-      font-size: 12px;
-    }
-  }
+	.br_pc {
+		display: none;
+	}
 
-  .inp_chk {
-    position: relative;
-    display: inline-flex;
+	.br_mo {
+		display: block;
+	}
 
-    >input {
-      @include input;
+	.inp {
+		input {
+			height: 35px;
+			padding: 0 10px;
+			font-size: 12px;
+		}
+	}
 
-      +.text {
-        position: relative;
-        padding-left: 12px;
-        font-weight: 200;
-        font-size: 10px;
-        line-height: 12px;
+	.textarea {
+		textarea {
+			height: 70px;
+			padding: 10px;
+			font-size: 12px;
+		}
+	}
 
-        &::before {
-          top: 2px;
-          width: 8px;
-          height: 8px;
-          background-color: #fff;
-        }
+	.inp_chk {
+		position: relative;
+		display: inline-flex;
 
-        &::after {
-          top: 4px;
-          left: 1px;
-          display: none;
-          width: 5px;
-          height: 3px;
-          border-bottom: 1px solid #2c74d7;
-          border-left: 1px solid #2c74d7;
-        }
-      }
-    }
-  }
+		>input {
+			@include input;
+
+			+.text {
+				position: relative;
+				padding-left: 12px;
+				font-weight: 200;
+				font-size: 10px;
+				line-height: 12px;
+
+				&::before {
+					top: 2px;
+					width: 8px;
+					height: 8px;
+					background-color: #fff;
+				}
+
+				&::after {
+					top: 4px;
+					left: 1px;
+					display: none;
+					width: 5px;
+					height: 3px;
+					border-bottom: 1px solid #2c74d7;
+					border-left: 1px solid #2c74d7;
+				}
+			}
+		}
+	}
 
 }
