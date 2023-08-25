@@ -85,6 +85,7 @@
 
 				.txt_wrap {
 					padding: 0 24px;
+					max-width: 100%;
 				}
 
 				&.rtl .txt_wrap {
@@ -162,12 +163,128 @@
 		}
 	}
 
+	/* 펼침메뉴 */
+	[data-accordion] {
+		margin-top: 35px;
+		border-top: 1px solid #b8c4cb;
+		text-align: left;
+
+		.info {
+			display: flex;
+			position: relative;
+			flex-direction: column;
+			padding: 0 30px;
+			border-bottom: 1px solid #b8c4cb;
+			color: #0077c0;
+
+			&:before,
+			&:after {
+				content: "";
+				position: absolute;
+				right: 23px;
+				top: 36px;
+				width: 16px;
+				height: 4px;
+				margin-top: -2px;
+				background: #ccc;
+			}
+
+			&:after {
+				transform: rotate(90deg);
+			}
+
+			&.on {
+				background: #e5f1f9;
+				color: #555;
+
+				&:before,
+				&:after {
+					background: #0077c0;
+				}
+
+				&:after {
+					transform: rotate(0);
+				}
+
+				button {
+					&:before {
+						background: #555;
+					}
+				}
+
+				.detail {
+					display: block;
+				}
+			}
+
+			button {
+				position: relative;
+				text-align: left;
+				font-family: #{$point-font};
+				font-size: 30px;
+				font-weight: 500;
+				padding-left: 0.25em;
+				line-height: 2.4em;
+				color: inherit;
+
+				&:before {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 50%;
+					width: 4px;
+					height: 4px;
+					margin-top: -2px;
+					background: #0077c0;
+					border-radius: 50%;
+				}
+			}
+
+			.detail {
+				display: none;
+				font-size: 22px;
+				padding-bottom: 12px;
+			}
+		}
+
+		@include tablet {
+			.info {
+				padding: 0 15px;
+
+				&:before,
+				&:after {
+					content: "";
+					position: absolute;
+					right: 15px;
+					top: 17px;
+					width: 8px;
+					height: 2px;
+					margin-top: -1px;
+				}
+
+				button {
+					font-size: 15px;
+
+					&:before {
+						width: 2px;
+						height: 2px;
+						margin-top: -1px;
+					}
+				}
+
+				.detail {
+					font-size: 12px;
+					padding-bottom: 6px;
+				}
+			}
+		}
+	}
+
 }
 
 @include tablet {
 	.sub_content {
-		//모바일 헤더 높이, 임시처리
-		margin-top: 50px;
+		margin-top: 60px;
 
 		br {
 			display: none !important;
@@ -297,6 +414,12 @@
 		.row {
 			height: 430px;
 		}
+
+		@include tablet {
+			.row {
+				padding-bottom: 0 !important;
+			}
+		}
 	}
 
 	.content3 {
@@ -342,6 +465,12 @@
 						font-size: 25px;
 					}
 				}
+			}
+		}
+
+		@include tablet {
+			.row {
+				padding-bottom: 0 !important;
 			}
 		}
 	}
@@ -466,6 +595,130 @@
 			.txt_wrap {
 				max-width: 100%;
 				margin-right: auto;
+
+				.list {
+					margin-top: 30px;
+
+					li {
+						position: relative;
+						font-weight: 500;
+						line-height: 2.5em;
+						padding-left: 2.5em;
+						font-size: 22px;
+						text-align: left;
+
+						&:before {
+							content: "";
+							position: absolute;
+							top: 50%;
+							left: 0;
+							width: 25px;
+							height: 21px;
+							margin-top: -10px;
+							background: url('../../assets/images/icon/icon_check.png');
+							background-size: contain;
+						}
+					}
+				}
+
+				@include tablet {
+					.list {
+						display: inline-flex;
+						flex-direction: column;
+						margin-left: auto;
+						margin-right: auto;
+						margin-top: 15px;
+
+						li {
+							font-size: 12px;
+							padding-left: 1.5em;
+
+							&:before {
+								width: 12px;
+								height: 10px;
+								margin-top: -5px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		@include tablet {
+			.row {
+				padding-bottom: 350px !important;
+				background-size: 500px;
+				background-position: center bottom;
+			}
+		}
+	}
+
+	.content6 {
+
+		.row {
+			padding: 150px 0;
+		}
+	}
+
+	.content7 {
+		background-image: url(../images/sub/sub_b_2_6.png);
+		background-size: cover;
+		background-position: center;
+
+		.row {
+			height: 750px;
+
+			.txt_wrap {
+				margin-right: auto;
+
+				.content_tit {
+					font-size: 50px;
+				}
+
+				.list {
+					margin-top: 65px;
+					text-align: left;
+
+					li {
+						font-weight: 300;
+						font-size: 36px;
+						line-height: 2em;
+						border-bottom: 1px solid #7f7f7f;
+
+						.tit {
+							font-weight: 500;
+							font-family: #{$point-font};
+							color: #2c74d7;
+							margin-right: 40px;
+						}
+
+						strong {
+							font-weight: 500;
+						}
+					}
+				}
+			}
+
+			@include tablet {
+				.txt_wrap {
+					margin: 0 auto;
+
+					.content_tit {
+						font-size: 25px;
+					}
+
+					.list {
+						margin-top: 30px;
+
+						li {
+							font-size: 18px;
+
+							.tit {
+								margin-right: 20px;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
