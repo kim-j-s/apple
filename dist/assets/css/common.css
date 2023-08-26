@@ -2084,6 +2084,56 @@ main.container {
 .b1 .content6 .row .txt_wrap .txt {
   color: #fff !important;
 }
+.b1 .content7 {
+  background-image: url(../images/sub/sub_b_2_6.png);
+  background-size: cover;
+  background-position: center;
+}
+.b1 .content7 .row {
+  height: 750px;
+}
+.b1 .content7 .row .txt_wrap {
+  margin-right: auto;
+}
+.b1 .content7 .row .txt_wrap .content_tit {
+  font-size: 50px;
+}
+.b1 .content7 .row .txt_wrap .list {
+  margin-top: 65px;
+  text-align: left;
+}
+.b1 .content7 .row .txt_wrap .list li {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 2em;
+  border-bottom: 1px solid #7f7f7f;
+}
+.b1 .content7 .row .txt_wrap .list li .tit {
+  font-weight: 500;
+  font-family: GmarketSans, 돋움, dotum, sans-serif;
+  color: #2c74d7;
+  margin-right: 40px;
+}
+.b1 .content7 .row .txt_wrap .list li strong {
+  font-weight: 500;
+}
+@media screen and (max-width: 1199px) {
+  .b1 .content7 .row .txt_wrap {
+    margin: 0 auto;
+  }
+  .b1 .content7 .row .txt_wrap .content_tit {
+    font-size: 25px;
+  }
+  .b1 .content7 .row .txt_wrap .list {
+    margin-top: 30px;
+  }
+  .b1 .content7 .row .txt_wrap .list li {
+    font-size: 18px;
+  }
+  .b1 .content7 .row .txt_wrap .list li .tit {
+    margin-right: 20px;
+  }
+}
 
 /* b2 */
 .b2 .key_visual {
@@ -2212,7 +2262,7 @@ main.container {
     gap: 30px;
   }
   .b2 .content4 .container .txt_wrap .list li {
-    flex: 0 1 calc(50% - 15px);
+    flex: 0 1 100%;
   }
   .b2 .content4 .container .txt_wrap .list li .txt_wrap {
     padding: 30px 15px;
@@ -2227,11 +2277,6 @@ main.container {
   .b2 .content4 .container .txt_wrap .list li .txt_wrap p {
     font-size: 12px;
     margin-top: 8px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .b2 .content4 .container .txt_wrap .list li {
-    flex: 0 1 100%;
   }
 }
 .b2 .content5 {
@@ -2474,8 +2519,10 @@ main.container {
 @media screen and (max-width: 1199px) {
   .c4 .content3 .container .txt_wrap .list {
     margin-top: 30px;
+    gap: 15px;
   }
   .c4 .content3 .container .txt_wrap .list li {
+    width: calc(33.33% - 10px);
     font-size: 12px;
   }
   .c4 .content3 .container .txt_wrap .list li .cover {
@@ -2491,14 +2538,6 @@ main.container {
   }
   .c4 .content3 .container .txt_wrap .list li .num {
     margin-bottom: 8px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .c4 .content3 .container .txt_wrap .list {
-    gap: 15px;
-  }
-  .c4 .content3 .container .txt_wrap .list li {
-    width: calc(33.33% - 10px);
   }
 }
 @media screen and (max-width: 1199px) {
@@ -2585,6 +2624,7 @@ main.container {
 }
 @media screen and (max-width: 1199px) {
   .c4 .content5 .container .list {
+    flex-direction: column;
     gap: 30px;
     margin-top: 30px;
   }
@@ -2596,14 +2636,62 @@ main.container {
     margin: 20px 0 5px;
   }
 }
-@media screen and (max-width: 800px) {
-  .c4 .content5 .container .list {
-    flex-direction: column;
-  }
-}
 @media screen and (max-width: 1199px) {
   .c4 .content5 .container {
     height: auto;
     padding: 65px 24px;
+  }
+}
+.c4 .content6 .row {
+  padding: 150px 0;
+}
+.c4 .content7 {
+  background-image: url(../images/sub/sub_b_2_6.png);
+  background-size: cover;
+  background-position: center;
+}
+.c4 .content7 .row {
+  height: 750px;
+}
+.c4 .content7 .row .txt_wrap {
+  margin-right: auto;
+}
+.c4 .content7 .row .txt_wrap .content_tit {
+  font-size: 50px;
+}
+.c4 .content7 .row .txt_wrap .list {
+  margin-top: 65px;
+  text-align: left;
+}
+.c4 .content7 .row .txt_wrap .list li {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 2em;
+  border-bottom: 1px solid #7f7f7f;
+}
+.c4 .content7 .row .txt_wrap .list li .tit {
+  font-weight: 500;
+  font-family: GmarketSans, 돋움, dotum, sans-serif;
+  color: #2c74d7;
+  margin-right: 40px;
+}
+.c4 .content7 .row .txt_wrap .list li strong {
+  font-weight: 500;
+}
+@media screen and (max-width: 1199px) {
+  .c4 .content7 .row .txt_wrap {
+    margin: 0 auto;
+  }
+  .c4 .content7 .row .txt_wrap .content_tit {
+    font-size: 25px;
+  }
+  .c4 .content7 .row .txt_wrap .list {
+    margin-top: 30px;
+  }
+  .c4 .content7 .row .txt_wrap .list li {
+    font-size: 18px;
+  }
+  .c4 .content7 .row .txt_wrap .list li .tit {
+    margin-right: 20px;
   }
 }
