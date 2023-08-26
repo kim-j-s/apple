@@ -121,9 +121,14 @@ $(function () {
     $(this).closest('li').addClass('active');
   });
 
-
-
-  
+	// 서브페이지 아코디언 목록 제어
+	const $accordion = $("[data-accordion] .info");
+	$accordion.on("click", "button", function () {
+		const $button = $(this);
+		const isExpanded = $button.attr("aria-expanded") === "true";
+		$button.attr("aria-expanded", !isExpanded);
+		$button.parents(".info").toggleClass("on", !isExpanded);
+	});
 
   // var swiper = null;
   // function initSwiper() {
