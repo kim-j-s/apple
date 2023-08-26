@@ -130,46 +130,7 @@ $(function () {
 		$button.parents(".info").toggleClass("on", !isExpanded);
 	});
 
-  // var swiper = null;
-  // function initSwiper() {
-  //   if (window.innerWidth <= 1119) {
-  //     swiper = new Swiper('#sp1', {
-  //       loop: true,
-  //       navigation: {
-  //         nextEl: '.swiper-button-next',
-  //         prevEl: '.swiper-button-prev',
-  //       },
-  //       spaceBetween: 50
-  //     });
-  //   } else {
-  //     if (swiper) {
-  //       swiper.destroy();
-  //     }
-  //   }
-  // }
-  // var timer;
-  // window.addEventListener('resize', function () {
-  //   if (timer) {
-  //     clearTimeout(timer);
-  //   }
-  //   timer = setTimeout(initSwiper, 200);
-  // });
-  // initSwiper();
-
-
-  // var swiper = new Swiper('.msp2', {
-  //   slidesPerView: 1,
-  //   // spaceBetween: 26,
-  //   loop: true,
-  //   navigation: {
-  //     nextEl: '.swiper-button-next',
-  //     prevEl: '.swiper-button-prev',
-  //   }
-
-  // });
-
   var swiper = new Swiper(".msp2", {
-    // slidesPerView: "auto",
     slidesPerView: 2,
     spaceBetween: 11,
     speed: 500,
