@@ -2022,6 +2022,18 @@ main.container {
   }
 }
 /* sub */
+/* a1 */
+.a1 .key_visual {
+  background-image: url(../images/sub/sub_kv_a.png);
+}
+.a1 .content1 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1700px;
+}
+
 /* b1 */
 .b1 .key_visual {
   background-image: url(../images/sub/sub_kv_b.png);
@@ -2391,11 +2403,6 @@ main.container {
   .b2 .content7 .row .txt_wrap .list li .tit {
     margin-right: 20px;
   }
-}
-
-/* c1 */
-.c1 .key_visual {
-  background-image: url(../images/sub/sub_kv_a.png);
 }
 
 /* c4 */
