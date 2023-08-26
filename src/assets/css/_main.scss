@@ -544,7 +544,6 @@ main.container {
   }
 }
 
-
 .main_content_item05_department {
   margin-top: 46px;
   text-align: center;
@@ -682,11 +681,11 @@ main.container {
 }
 
 .main_content_item06 {
-  display: flex;
-  align-items: center;
-
+  font-size: 0;
   .left {
-    flex: 1 1 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
 
     .maparea {
       width: 100%;
@@ -696,7 +695,9 @@ main.container {
   }
 
   .right {
-    flex: 1 1 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
     padding-left: 200px;
 
     .title {
@@ -706,7 +707,7 @@ main.container {
       line-height: 1;
       color: #2c74d7;
 
-      ~.title {
+      ~ .title {
         margin-top: 36px;
       }
     }
@@ -726,17 +727,11 @@ main.container {
 
         .date {
           flex: none;
+          display: flex;
+          justify-content: space-between;
           width: 120px;
-          text-align: justify;
           overflow: hidden;
-          letter-spacing: -3px;
-          text-indent: 3px;
-
-          &::after {
-            content: '';
-            display: inline-block;
-            width: 100%;
-          }
+          letter-spacing: normal;
         }
 
         .time {
@@ -829,10 +824,11 @@ main.container {
     &.ty4 {
       height: auto;
       padding-bottom: 50px;
+      background: #224a81 url(../images/main/main_04_01_m.png) no-repeat top center/cover;
 
       .main_content_title {
         width: auto;
-        padding: 100px 24px 0 24px;
+        padding: 234px 25px 0 25px;
 
         .title {
           font-size: 30px;
@@ -850,14 +846,9 @@ main.container {
 
         .more {
           margin-top: 10px;
-
           a {
-            // display: inline-block;
-            // font-family: "GmarketSans", "돋움", dotum, sans-serif;
-            // font-weight: 500;
             font-size: 11px;
             line-height: 18px;
-            // color: #ccc;
           }
         }
 
@@ -1216,8 +1207,8 @@ main.container {
     display: block;
 
     .left {
-      flex: 1 1 0;
-
+      display: block;
+      width: 100%;
       .maparea {
         width: 100%;
         height: 260px;
@@ -1228,7 +1219,8 @@ main.container {
     }
 
     .right {
-      flex: 1 1 0;
+      display: block;
+      width: 100%;
       padding: 50px 42px;
 
       .title {
@@ -1251,7 +1243,7 @@ main.container {
           }
 
           .date {
-            width: 65px;
+            width: 55px;
             font-weight: 500;
             letter-spacing: -0.5px;
           }
