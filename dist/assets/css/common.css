@@ -1325,11 +1325,12 @@ main.container {
 }
 
 .main_content_item06 {
-  display: flex;
-  align-items: center;
+  font-size: 0;
 }
 .main_content_item06 .left {
-  flex: 1 1 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
 }
 .main_content_item06 .left .maparea {
   width: 100%;
@@ -1337,7 +1338,9 @@ main.container {
   background: #ccc;
 }
 .main_content_item06 .right {
-  flex: 1 1 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
   padding-left: 200px;
 }
 .main_content_item06 .right .title {
@@ -1364,16 +1367,11 @@ main.container {
 }
 .main_content_item06 .right .time_list li .date {
   flex: none;
+  display: flex;
+  justify-content: space-between;
   width: 120px;
-  text-align: justify;
   overflow: hidden;
-  letter-spacing: -3px;
-  text-indent: 3px;
-}
-.main_content_item06 .right .time_list li .date::after {
-  content: "";
-  display: inline-block;
-  width: 100%;
+  letter-spacing: normal;
 }
 .main_content_item06 .right .time_list li .time {
   padding-left: 10px;
@@ -1435,10 +1433,11 @@ main.container {
   .main_content.ty4 {
     height: auto;
     padding-bottom: 50px;
+    background: #224a81 url(../images/main/main_04_01_m.png) no-repeat top center/cover;
   }
   .main_content.ty4 .main_content_title {
     width: auto;
-    padding: 100px 24px 0 24px;
+    padding: 234px 25px 0 25px;
   }
   .main_content.ty4 .main_content_title .title {
     font-size: 30px;
@@ -1735,7 +1734,8 @@ main.container {
     display: block;
   }
   .main_content_item06 .left {
-    flex: 1 1 0;
+    display: block;
+    width: 100%;
   }
   .main_content_item06 .left .maparea {
     width: 100%;
@@ -1745,7 +1745,8 @@ main.container {
     background: #ccc;
   }
   .main_content_item06 .right {
-    flex: 1 1 0;
+    display: block;
+    width: 100%;
     padding: 50px 42px;
   }
   .main_content_item06 .right .title {
@@ -1765,7 +1766,7 @@ main.container {
     margin-top: 10px;
   }
   .main_content_item06 .right .time_list li .date {
-    width: 65px;
+    width: 55px;
     font-weight: 500;
     letter-spacing: -0.5px;
   }
