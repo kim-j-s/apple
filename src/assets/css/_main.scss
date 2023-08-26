@@ -423,10 +423,6 @@ main.container {
   }    
 }
 
-.dn {
-  display: none;
-}
-
 .main_content_item03_step2 {
 
   display: inline-flex;
@@ -494,6 +490,60 @@ main.container {
     }
   }
 }
+
+.main_content_item04 {
+  width: 1668px;
+  margin: 0 auto;
+  margin-top: 140px;  
+  padding: 0 50px;
+  .inner {
+    position: relative;
+    .msp2-button {
+      position: absolute;
+      top: 100px;
+      width: 38px;
+      height: 72px;
+      margin-top: 0;
+      &::after {
+        content: none;
+      }
+      &.swiper-button-prev {
+        left: -50px;
+        background: url(../images/icon/icon_swiper_pager_l_g.png) no-repeat center / cover;
+      }
+      &.swiper-button-next {
+        right: -50px;
+        background: url(../images/icon/icon_swiper_pager_r_g.png) no-repeat center / cover;
+      }
+    }
+  }
+  .msp2 {
+    position: relative;
+    width: 1518px;
+    margin: 0 auto;
+    overflow: hidden;
+    .swiper-wrapper {
+      height: auto;
+      .swiper-slide {
+        width: 360px;
+        font-size: 0;
+        img {
+          width: 100%;
+        }
+        .text {
+          padding-top: 26px;
+          font-family: "GmarketSans", "돋움", dotum, sans-serif;
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 36px;
+          color: #fff;
+          text-align: center;
+        }
+      }
+    }    
+  }
+}
+
 
 .main_content_item05_department {
   margin-top: 46px;
@@ -1041,6 +1091,48 @@ main.container {
           font-weight: 500;
         }
       }
+    }
+  }
+
+  .main_content_item04 {
+    width: auto;
+    margin-top: 28px;
+    padding: 0 40px;
+    .inner {
+      .msp2-button {
+        top: 36px;
+        width: 19px;
+        height: 36px;
+        // margin-top: 0;
+        &::after {
+          content: none;
+        }
+        &.swiper-button-prev {
+          left: -30px;
+          // background: url(../images/icon/icon_swiper_pager_l_g.png) no-repeat center / cover;
+        }
+        &.swiper-button-next {
+          right: -30px;
+          // background: url(../images/icon/icon_swiper_pager_r_g.png) no-repeat center / cover;
+        }
+      }
+    }
+    .msp2 {
+      width: auto;
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 360px;
+          font-size: 0;
+          img {
+            width: 100%;
+          }
+          .text {
+            padding-top: 13px;
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }    
     }
   }
 
