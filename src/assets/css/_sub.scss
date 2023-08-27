@@ -1979,6 +1979,11 @@
 						margin-top: 30px;
 
 						li {
+							.thumb {
+								img {
+									width: 100%;
+								}
+							}
 							.cont {
 								display: block;
 								height: auto;
@@ -2092,6 +2097,7 @@
 					.list {
 						grid-template-columns: repeat(2, 1fr);
 						gap: 24px;
+						min-width: 0;
 						margin-top: 30px;
 
 						li {
