@@ -125,9 +125,16 @@ $(function () {
 	const $accordion = $("[data-accordion] .info");
 	$accordion.on("click", "button", function () {
 		const $button = $(this);
+		const $info = $button.parents(".info");
 		const isExpanded = $button.attr("aria-expanded") === "true";
-		$button.attr("aria-expanded", !isExpanded);
-		$button.parents(".info").toggleClass("on", !isExpanded);
+		
+		$accordion.find("button").attr("aria-expanded", false);
+		$accordion.removeClass("on");
+		
+		if (!isExpanded) {
+			$button.attr("aria-expanded", true);
+			$info.addClass("on");
+		}
 	});
 
   var swiper = new Swiper(".msp2", {
