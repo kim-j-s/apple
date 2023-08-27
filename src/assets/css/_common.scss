@@ -208,6 +208,28 @@ $point-font: "GmarketSans", "돋움", dotum, sans-serif;
 		}
 	}
 }
+@include tablet {
+	.chk_list {
+		display: inline-flex;
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 15px;
+
+		li {
+			font-size: 12px;
+			padding-left: 18px;
+			line-height: 30px;
+
+			&:before {
+				top: 15px;
+				width: 12px;
+				height: 10px;
+				margin-top: -5px;
+			}
+		}
+	}
+}
 
 @media screen and (max-width: 1199px) {
 	.d_pc {

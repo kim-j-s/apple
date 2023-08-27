@@ -155,6 +155,26 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .chk_list {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+  .chk_list li {
+    font-size: 12px;
+    padding-left: 18px;
+    line-height: 30px;
+  }
+  .chk_list li:before {
+    top: 15px;
+    width: 12px;
+    height: 10px;
+    margin-top: -5px;
+  }
+}
+@media screen and (max-width: 1199px) {
   .d_pc {
     display: none;
   }
@@ -2179,57 +2199,14 @@ main.container {
 .a1 .content4 .row .txt_wrap .txt {
   color: #d5d5d5;
 }
-.a1 .content4 .row .txt_wrap .list {
-  margin-top: 30px;
-}
-.a1 .content4 .row .txt_wrap .list li {
-  position: relative;
-  font-weight: 500;
-  line-height: 55px;
-  padding-left: 55px;
-  font-size: 22px;
-  text-align: left;
-}
-.a1 .content4 .row .txt_wrap .list li:before {
-  content: "";
-  position: absolute;
-  top: 27px;
-  left: 0;
-  width: 25px;
-  height: 21px;
-  margin-top: -10px;
-  background: url("../../assets/images/icon/icon_check.png");
-  background-size: contain;
-}
 @media screen and (max-width: 1199px) {
   .a1 .content4 .row .txt_wrap .content_tit {
     font-size: 24px;
-  }
-  .a1 .content4 .row .txt_wrap .list {
-    display: inline-flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-  }
-  .a1 .content4 .row .txt_wrap .list li {
-    font-size: 12px;
-    padding-left: 18px;
-    line-height: 30px;
-  }
-  .a1 .content4 .row .txt_wrap .list li:before {
-    top: 15px;
-    width: 12px;
-    height: 10px;
-    margin-top: -5px;
   }
 }
 .a1 .content4 .row .img_wrap {
   flex: 0 1 50%;
   align-self: flex-end;
-}
-.a1 .content4 .row .img_wrap img {
-  max-width: 720px;
 }
 @media screen and (max-width: 1199px) {
   .a1 .content4 .row {
@@ -2487,6 +2464,57 @@ main.container {
 .a1 .content9 .slide_wrap .mySwiper2 {
   height: 750px;
 }
+.a1 .content9 .slide_wrap .mySwiper2Wrap {
+  position: relative;
+  padding: 0 60px;
+}
+.a1 .content9 .slide_wrap .mySwiper2Wrap .swiper-wrapper {
+  height: auto;
+}
+.a1 .content9 .slide_wrap .mySwiper2Wrap .swiper-wrapper .swiper-slide {
+  height: auto;
+}
+.a1 .content9 .slide_wrap .mySwiper2Wrap .mySwiper2-btn {
+  top: 50%;
+  width: 38px;
+  height: 72px;
+  margin-top: 0;
+  transform: translateY(-50%);
+  background-size: cover;
+}
+.a1 .content9 .slide_wrap .mySwiper2Wrap .mySwiper2-btn::after {
+  content: none;
+}
+.a1 .content9 .slide_wrap .mySwiper2Wrap .mySwiper2-btn.swiper-button-prev {
+  left: -38px;
+  background-image: url(../images/icon/icon_swiper_pager_l_g.png);
+}
+.a1 .content9 .slide_wrap .mySwiper2Wrap .mySwiper2-btn.swiper-button-next {
+  right: -38px;
+  background-image: url(../images/icon/icon_swiper_pager_r_g.png);
+}
+.a1 .content9 .slide_wrap .mySwiperWrap {
+  position: relative;
+  padding: 0 60px;
+}
+.a1 .content9 .slide_wrap .mySwiperWrap .mySwiper-btn {
+  top: 50%;
+  width: 38px;
+  height: 72px;
+  margin-top: 0;
+  transform: translateY(-50%);
+}
+.a1 .content9 .slide_wrap .mySwiperWrap .mySwiper-btn::after {
+  content: none;
+}
+.a1 .content9 .slide_wrap .mySwiperWrap .mySwiper-btn.swiper-button-prev {
+  left: -38px;
+  background-image: url(../images/icon/icon_swiper_pager_l_g.png);
+}
+.a1 .content9 .slide_wrap .mySwiperWrap .mySwiper-btn.swiper-button-next {
+  right: -38px;
+  background-image: url(../images/icon/icon_swiper_pager_r_g.png);
+}
 .a1 .content9 .slide_wrap .mySwiper {
   height: 280px;
   margin-top: 30px;
@@ -2511,10 +2539,29 @@ main.container {
   .a1 .content9 .slide_wrap {
     margin-top: 35px;
   }
+  .a1 .content9 .slide_wrap .mySwiper2Wrap {
+    padding: 0 26px;
+  }
+  .a1 .content9 .slide_wrap .mySwiper2Wrap .mySwiper2-btn {
+    width: 19px;
+    height: 36px;
+  }
+  .a1 .content9 .slide_wrap .mySwiper2Wrap .mySwiper2-btn::after {
+    content: none;
+  }
+  .a1 .content9 .slide_wrap .mySwiper2Wrap .mySwiper2-btn.swiper-button-prev {
+    left: -2px;
+  }
+  .a1 .content9 .slide_wrap .mySwiper2Wrap .mySwiper2-btn.swiper-button-next {
+    right: -2px;
+  }
   .a1 .content9 .slide_wrap .mySwiper2 {
-    height: 375px;
+    height: auto;
   }
   .a1 .content9 .slide_wrap .mySwiper {
+    display: none;
+  }
+  .a1 .content9 .slide_wrap .mySwiperWrap .mySwiper-btn {
     display: none;
   }
   .a1 .content9 .slide_wrap .swiper-button-next,
@@ -3037,48 +3084,6 @@ main.container {
   max-width: 100%;
   margin-right: auto;
 }
-.b2 .content5 .row .txt_wrap .list {
-  margin-top: 30px;
-}
-.b2 .content5 .row .txt_wrap .list li {
-  position: relative;
-  font-weight: 500;
-  line-height: 55px;
-  padding-left: 55px;
-  font-size: 22px;
-  text-align: left;
-}
-.b2 .content5 .row .txt_wrap .list li:before {
-  content: "";
-  position: absolute;
-  top: 27px;
-  left: 0;
-  width: 25px;
-  height: 21px;
-  margin-top: -10px;
-  background: url("../../assets/images/icon/icon_check.png");
-  background-size: contain;
-}
-@media screen and (max-width: 1199px) {
-  .b2 .content5 .row .txt_wrap .list {
-    display: inline-flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-  }
-  .b2 .content5 .row .txt_wrap .list li {
-    font-size: 12px;
-    padding-left: 18px;
-    line-height: 30px;
-  }
-  .b2 .content5 .row .txt_wrap .list li:before {
-    top: 15px;
-    width: 12px;
-    height: 10px;
-    margin-top: -5px;
-  }
-}
 @media screen and (max-width: 1199px) {
   .b2 .content5 .row {
     padding-bottom: 350px !important;
@@ -3354,10 +3359,10 @@ main.container {
 .c4 .content3 .container .txt_wrap .list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 90px;
 }
 .c4 .content3 .container .txt_wrap .list li {
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   font-size: 24px;
@@ -3370,11 +3375,31 @@ main.container {
   align-items: center;
 }
 .c4 .content3 .container .txt_wrap .list li i {
-  width: 12px;
-  height: 12px;
-  border: 2px solid #333;
-  border-radius: 50%;
+  position: relative;
+  width: 100%;
+  height: 13px;
   margin: 50px 0 45px;
+}
+.c4 .content3 .container .txt_wrap .list li i::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 13px;
+  height: 13px;
+  border-radius: 50px;
+  border: 2px solid #0c2c56;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+}
+.c4 .content3 .container .txt_wrap .list li i::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #cbd4e2;
 }
 .c4 .content3 .container .txt_wrap .list li .num {
   color: #2c74d7;
@@ -3382,11 +3407,12 @@ main.container {
 }
 @media screen and (max-width: 1199px) {
   .c4 .content3 .container .txt_wrap .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 30px;
-    gap: 15px;
+    gap: 20px 0;
   }
   .c4 .content3 .container .txt_wrap .list li {
-    width: calc(33.33% - 10px);
     font-size: 12px;
   }
   .c4 .content3 .container .txt_wrap .list li .cover {
@@ -3396,9 +3422,12 @@ main.container {
     height: 45px;
   }
   .c4 .content3 .container .txt_wrap .list li i {
-    width: 6px;
     height: 6px;
     margin: 25px 0 22px;
+  }
+  .c4 .content3 .container .txt_wrap .list li i::before {
+    width: 6px;
+    height: 6px;
   }
   .c4 .content3 .container .txt_wrap .list li .num {
     margin-bottom: 8px;
@@ -3420,48 +3449,6 @@ main.container {
 }
 .c4 .content4 .row .txt_wrap {
   margin-right: auto;
-}
-.c4 .content4 .row .txt_wrap .list {
-  margin-top: 30px;
-}
-.c4 .content4 .row .txt_wrap .list li {
-  position: relative;
-  font-weight: 500;
-  line-height: 55px;
-  padding-left: 55px;
-  font-size: 22px;
-  text-align: left;
-}
-.c4 .content4 .row .txt_wrap .list li:before {
-  content: "";
-  position: absolute;
-  top: 27px;
-  left: 0;
-  width: 25px;
-  height: 21px;
-  margin-top: -10px;
-  background: url("../../assets/images/icon/icon_check.png");
-  background-size: contain;
-}
-@media screen and (max-width: 1199px) {
-  .c4 .content4 .row .txt_wrap .list {
-    display: inline-flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-  }
-  .c4 .content4 .row .txt_wrap .list li {
-    font-size: 12px;
-    padding-left: 18px;
-    line-height: 30px;
-  }
-  .c4 .content4 .row .txt_wrap .list li:before {
-    top: 15px;
-    width: 12px;
-    height: 10px;
-    margin-top: -5px;
-  }
 }
 .c4 .content5 .container {
   display: flex;
