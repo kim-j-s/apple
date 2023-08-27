@@ -1787,7 +1787,7 @@ main.container {
 /* common media */
 /* sub */
 .sub_content {
-  letter-spacing: -0.025em;
+  letter-spacing: -1px;
   /* 펼침메뉴 */
 }
 .sub_content .container {
@@ -1816,13 +1816,13 @@ main.container {
 }
 .sub_content .key_visual .row .key_tit {
   font-size: 60px;
-  line-height: 1.2em;
+  line-height: 72px;
   font-weight: 500;
 }
 .sub_content .key_visual .row .txt {
   font-size: 24px;
-  line-height: 1.5em;
-  margin-top: 1.5em;
+  line-height: 36px;
+  margin-top: 36px;
   font-weight: 300;
 }
 @media screen and (max-width: 1199px) {
@@ -1834,9 +1834,12 @@ main.container {
   }
   .sub_content .key_visual .row .key_tit {
     font-size: 30px;
+    line-height: 36px;
   }
   .sub_content .key_visual .row .txt {
     font-size: 12px;
+    line-height: 18px;
+    margin-top: 18px;
   }
 }
 .sub_content .content .row {
@@ -1883,11 +1886,16 @@ main.container {
   font-family: GmarketSans, 돋움, dotum, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: -0.05em;
-  line-height: 1.2em;
+  letter-spacing: -1px;
+  line-height: 24px;
 }
 .sub_content .content .txt_wrap .sub_tit em {
-  font-size: 1.8em;
+  font-size: 36px;
+}
+@media screen and (max-width: 1199px) {
+  .sub_content .content .txt_wrap .sub_tit em {
+    font-size: 18px;
+  }
 }
 .sub_content .content .txt_wrap .content_tit {
   margin-top: 40px;
@@ -1895,8 +1903,8 @@ main.container {
   color: #2c74d7;
   font-family: GmarketSans, 돋움, dotum, sans-serif;
   font-weight: 500;
-  line-height: 1.2em;
-  letter-spacing: -0.1em;
+  line-height: 72px;
+  letter-spacing: -5px;
 }
 .sub_content .content .txt_wrap .txt {
   margin-top: 38px;
@@ -1911,13 +1919,20 @@ main.container {
 }
 @media screen and (max-width: 1199px) {
   .sub_content .content .txt_wrap .sub_tit {
-    font-size: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0;
   }
   .sub_content .content .txt_wrap .content_tit {
     font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -2px;
   }
   .sub_content .content .txt_wrap .txt {
     font-size: 12px;
+    margin-top: 19px;
+    letter-spacing: -1px;
+    line-height: 18px;
   }
   .sub_content .content .img_wrap {
     margin-top: 60px;
@@ -1979,8 +1994,8 @@ main.container {
   font-family: GmarketSans, 돋움, dotum, sans-serif;
   font-size: 30px;
   font-weight: 500;
-  padding-left: 0.25em;
-  line-height: 2.4em;
+  padding-left: 8px;
+  line-height: 72px;
   color: inherit;
 }
 .sub_content [data-accordion] .info button:before {
@@ -2014,6 +2029,7 @@ main.container {
   }
   .sub_content [data-accordion] .info button {
     font-size: 15px;
+    line-height: 36px;
   }
   .sub_content [data-accordion] .info button:before {
     width: 2px;
@@ -2078,6 +2094,7 @@ main.container {
   }
   .a1 .content2 .img_wrap {
     margin-top: 30px;
+    justify-content: center;
   }
   .a1 .content2 .img_wrap img {
     height: auto;
@@ -2145,8 +2162,8 @@ main.container {
 .a1 .content4 .row .txt_wrap .list li {
   position: relative;
   font-weight: 500;
-  line-height: 2.5em;
-  padding-left: 2.5em;
+  line-height: 55px;
+  padding-left: 55px;
   font-size: 22px;
   text-align: left;
 }
@@ -2174,7 +2191,8 @@ main.container {
   }
   .a1 .content4 .row .txt_wrap .list li {
     font-size: 12px;
-    padding-left: 1.5em;
+    padding-left: 18px;
+    line-height: 30px;
   }
   .a1 .content4 .row .txt_wrap .list li:before {
     top: 15px;
@@ -2366,7 +2384,7 @@ main.container {
 }
 .a1 .content8 .row .txt_wrap .content_tit small {
   font-size: 36px;
-  letter-spacing: -0.1em;
+  letter-spacing: -3px;
 }
 .a1 .content8 .row .txt_wrap .info {
   margin-top: 35px;
@@ -2380,8 +2398,8 @@ main.container {
 }
 .a1 .content8 .row .txt_wrap .info .history li {
   font-size: 22px;
-  line-height: 1.5em;
-  padding: 0.3em 0;
+  line-height: 33px;
+  padding: 6px 0;
 }
 .a1 .content8 .row .img_wrap {
   position: relative;
@@ -2412,6 +2430,7 @@ main.container {
   }
   .a1 .content8 .row .txt_wrap .content_tit small {
     font-size: 18px;
+    letter-spacing: -1px;
   }
   .a1 .content8 .row .txt_wrap .info {
     margin-top: 18px;
@@ -2424,6 +2443,8 @@ main.container {
   }
   .a1 .content8 .row .txt_wrap .info .history li {
     font-size: 12px;
+    line-height: 18px;
+    padding: 3px 0;
   }
   .a1 .content8 .row .img_wrap {
     padding: 0 !important;
@@ -2511,7 +2532,7 @@ main.container {
 }
 .a1 .content10 .container .info_wrap .info .list li {
   display: flex;
-  line-height: 2em;
+  line-height: 60px;
 }
 .a1 .content10 .container .info_wrap .info .list li .date {
   font-weight: 500;
@@ -2556,13 +2577,10 @@ main.container {
     left: 75px;
   }
   .a1 .content10 .container .info_wrap .info .list li {
-    display: flex;
-    line-height: 2em;
+    line-height: 30px;
   }
   .a1 .content10 .container .info_wrap .info .list li .date {
-    font-weight: 500;
     width: 60px;
-    text-align: justify;
   }
   .a1 .content10 .container .info_wrap .info .list li .date.spacing {
     word-spacing: 3px;
@@ -2625,7 +2643,7 @@ main.container {
   flex-shrink: 0;
 }
 .a1 .content11 .map_wrap .info .list > li .txt.bus > li + li {
-  margin-top: 1.5em;
+  margin-top: 15px;
 }
 @media screen and (max-width: 1199px) {
   .a1 .content11 .map_wrap {
@@ -2660,7 +2678,7 @@ main.container {
     width: auto;
   }
   .a1 .content11 .map_wrap .info .list > li .txt.bus > li + li {
-    margin-top: 0.5em;
+    margin-top: 15px;
   }
 }
 .a1 .content12 {
@@ -2684,7 +2702,7 @@ main.container {
 .a1 .content12 .row .txt_wrap .list li {
   font-weight: 300;
   font-size: 36px;
-  line-height: 2em;
+  line-height: 72px;
   border-bottom: 1px solid #7f7f7f;
 }
 .a1 .content12 .row .txt_wrap .list li .tit {
@@ -2708,6 +2726,7 @@ main.container {
   }
   .a1 .content12 .row .txt_wrap .list li {
     font-size: 18px;
+    line-height: 36px;
   }
   .a1 .content12 .row .txt_wrap .list li .tit {
     margin-right: 20px;
@@ -2731,6 +2750,14 @@ main.container {
 }
 .b1 .content3 .row {
   padding: 160px 0;
+}
+.b1 .content3 .row .content_tit {
+  letter-spacing: -9px;
+}
+@media screen and (max-width: 1199px) {
+  .b1 .content3 .row .content_tit {
+    letter-spacing: -2px;
+  }
 }
 .b1 .content3 .row .sub_img {
   margin-top: 70px;
@@ -2797,7 +2824,7 @@ main.container {
 .b1 .content7 .row .txt_wrap .list li {
   font-weight: 300;
   font-size: 36px;
-  line-height: 2em;
+  line-height: 72px;
   border-bottom: 1px solid #7f7f7f;
 }
 .b1 .content7 .row .txt_wrap .list li .tit {
@@ -2821,6 +2848,7 @@ main.container {
   }
   .b1 .content7 .row .txt_wrap .list li {
     font-size: 18px;
+    line-height: 36px;
   }
   .b1 .content7 .row .txt_wrap .list li .tit {
     margin-right: 20px;
@@ -2990,8 +3018,8 @@ main.container {
 .b2 .content5 .row .txt_wrap .list li {
   position: relative;
   font-weight: 500;
-  line-height: 2.5em;
-  padding-left: 2.5em;
+  line-height: 55px;
+  padding-left: 55px;
   font-size: 22px;
   text-align: left;
 }
@@ -3016,7 +3044,8 @@ main.container {
   }
   .b2 .content5 .row .txt_wrap .list li {
     font-size: 12px;
-    padding-left: 1.5em;
+    padding-left: 18px;
+    line-height: 30px;
   }
   .b2 .content5 .row .txt_wrap .list li:before {
     top: 15px;
@@ -3056,7 +3085,7 @@ main.container {
 .b2 .content7 .row .txt_wrap .list li {
   font-weight: 300;
   font-size: 36px;
-  line-height: 2em;
+  line-height: 72px;
   border-bottom: 1px solid #7f7f7f;
 }
 .b2 .content7 .row .txt_wrap .list li .tit {
@@ -3080,6 +3109,7 @@ main.container {
   }
   .b2 .content7 .row .txt_wrap .list li {
     font-size: 18px;
+    line-height: 36px;
   }
   .b2 .content7 .row .txt_wrap .list li .tit {
     margin-right: 20px;
@@ -3173,7 +3203,7 @@ main.container {
 .c1 .content7 .row .txt_wrap .list li {
   font-weight: 300;
   font-size: 36px;
-  line-height: 2em;
+  line-height: 72px;
   border-bottom: 1px solid #7f7f7f;
 }
 .c1 .content7 .row .txt_wrap .list li .tit {
@@ -3197,6 +3227,7 @@ main.container {
   }
   .c1 .content7 .row .txt_wrap .list li {
     font-size: 18px;
+    line-height: 36px;
   }
   .c1 .content7 .row .txt_wrap .list li .tit {
     margin-right: 20px;
@@ -3207,9 +3238,15 @@ main.container {
 .c4 .key_visual {
   background-image: url(../images/sub/sub_kv_d.png);
 }
+.c4 .content1 .row .txt_wrap .content_tit {
+  letter-spacing: -6px;
+}
 @media screen and (max-width: 1199px) {
   .c4 .content1 .row {
     padding-bottom: 0 !important;
+  }
+  .c4 .content1 .row .txt_wrap .content_tit {
+    letter-spacing: -2px;
   }
 }
 .c4 .content2 {
@@ -3245,7 +3282,7 @@ main.container {
   font-weight: 300;
   font-size: 48px;
   color: #fff;
-  letter-spacing: -0.1em;
+  letter-spacing: -4px;
 }
 .c4 .content2 .container .txt_wrap .list li .list_tit {
   font-size: 30px;
@@ -3266,6 +3303,7 @@ main.container {
   }
   .c4 .content2 .container .txt_wrap .list li .num {
     font-size: 24px;
+    letter-spacing: -2px;
   }
   .c4 .content2 .container .txt_wrap .list li .list_tit {
     font-size: 15px;
@@ -3368,8 +3406,8 @@ main.container {
 .c4 .content4 .row .txt_wrap .list li {
   position: relative;
   font-weight: 500;
-  line-height: 2.5em;
-  padding-left: 2.5em;
+  line-height: 55px;
+  padding-left: 55px;
   font-size: 22px;
   text-align: left;
 }
@@ -3394,7 +3432,8 @@ main.container {
   }
   .c4 .content4 .row .txt_wrap .list li {
     font-size: 12px;
-    padding-left: 1.5em;
+    padding-left: 18px;
+    line-height: 30px;
   }
   .c4 .content4 .row .txt_wrap .list li:before {
     top: 15px;
@@ -3472,7 +3511,7 @@ main.container {
 .c4 .content7 .row .txt_wrap .list li {
   font-weight: 300;
   font-size: 36px;
-  line-height: 2em;
+  line-height: 72px;
   border-bottom: 1px solid #7f7f7f;
 }
 .c4 .content7 .row .txt_wrap .list li .tit {
@@ -3496,6 +3535,7 @@ main.container {
   }
   .c4 .content7 .row .txt_wrap .list li {
     font-size: 18px;
+    line-height: 36px;
   }
   .c4 .content7 .row .txt_wrap .list li .tit {
     margin-right: 20px;

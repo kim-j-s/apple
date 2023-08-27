@@ -1,6 +1,6 @@
 /* sub */
 .sub_content {
-	letter-spacing: -0.025em;
+	letter-spacing: -1px;
 
 	.container {
 		max-width: 1520px;
@@ -31,14 +31,14 @@
 
 			.key_tit {
 				font-size: 60px;
-				line-height: 1.2em;
+				line-height: 72px;
 				font-weight: 500;
 			}
 
 			.txt {
 				font-size: 24px;
-				line-height: 1.5em;
-				margin-top: 1.5em;
+				line-height: 36px;
+				margin-top: 36px;
 				font-weight: 300;
 			}
 		}
@@ -52,10 +52,13 @@
 
 				.key_tit {
 					font-size: 30px;
+					line-height: 36px;
 				}
 
 				.txt {
 					font-size: 12px;
+					line-height: 18px;
+					margin-top: 18px;
 				}
 			}
 		}
@@ -116,34 +119,34 @@
 				font-family: #{$point-font};
 				font-weight: 500;
 				text-transform: uppercase;
-				letter-spacing: -0.05em;
-				line-height: 1.2em;
+				letter-spacing: -1px;
+				line-height: 24px;
 
 				em {
-					font-size: 1.8em;
+					font-size: 36px;
+
+					@include tablet {
+						font-size: 18px;
+					}
 				}
 			}
 
 			.content_tit {
-				// margin-top: 0.6em;
 				margin-top: 40px;
 				font-size: 60px;
 				color: #2c74d7;
 				font-family: #{$point-font};
 				font-weight: 500;
-				line-height: 1.2em;
-				letter-spacing: -0.1em;
+				line-height: 72px;
+				letter-spacing: -5px;
 			}
 
 			.txt {
-				// margin-top: 1.3em;
 				margin-top: 38px;
 				font-weight: 300;
 				font-size: 22px;
 				color: #333;
-				// letter-spacing: -0.025em;
 				letter-spacing: -2px;
-				// line-height: 1.63em;
 				line-height: 36px;
 			}
 		}
@@ -155,15 +158,22 @@
 		@include tablet {
 			.txt_wrap {
 				.sub_tit {
-					font-size: 10px;
+					font-size: 12px;
+					line-height: 16px;
+					letter-spacing: 0;
 				}
 
 				.content_tit {
 					font-size: 30px;
+					line-height: 36px;
+					letter-spacing: -2px;
 				}
 
 				.txt {
 					font-size: 12px;
+					margin-top: 19px;
+					letter-spacing: -1px;
+					line-height: 18px;
 				}
 			}
 
@@ -243,8 +253,9 @@
 				font-family: #{$point-font};
 				font-size: 30px;
 				font-weight: 500;
-				padding-left: 0.25em;
-				line-height: 2.4em;
+				padding-left: 8px;
+				;
+				line-height: 72px;
 				color: inherit;
 
 				&:before {
@@ -284,6 +295,7 @@
 
 				button {
 					font-size: 15px;
+					line-height: 36px;
 
 					&:before {
 						width: 2px;
@@ -373,6 +385,7 @@
 
 			.img_wrap {
 				margin-top: 30px;
+				justify-content: center;
 
 				img {
 					height: auto;
@@ -457,8 +470,8 @@
 					li {
 						position: relative;
 						font-weight: 500;
-						line-height: 2.5em;
-						padding-left: 2.5em;
+						line-height: 55px;
+						padding-left: 55px;
 						font-size: 22px;
 						text-align: left;
 
@@ -492,7 +505,8 @@
 
 						li {
 							font-size: 12px;
-							padding-left: 1.5em;
+							padding-left: 18px;
+							line-height: 30px;
 
 							&:before {
 								top: 15px;
@@ -747,7 +761,7 @@
 				.content_tit {
 					small {
 						font-size: 36px;
-						letter-spacing: -0.1em;
+						letter-spacing: -3px;
 					}
 				}
 
@@ -764,8 +778,8 @@
 
 						li {
 							font-size: 22px;
-							line-height: 1.5em;
-							padding: 0.3em 0;
+							line-height: 33px;
+							padding: 6px 0;
 						}
 					}
 				}
@@ -808,6 +822,7 @@
 					.content_tit {
 						small {
 							font-size: 18px;
+							letter-spacing: -1px;
 						}
 					}
 
@@ -823,6 +838,8 @@
 
 							li {
 								font-size: 12px;
+								line-height: 18px;
+								padding: 3px 0;
 							}
 						}
 					}
@@ -936,7 +953,7 @@
 
 						li {
 							display: flex;
-							line-height: 2em;
+							line-height: 60px;
 
 							.date {
 								font-weight: 500;
@@ -992,13 +1009,10 @@
 							}
 
 							li {
-								display: flex;
-								line-height: 2em;
+								line-height: 30px;
 
 								.date {
-									font-weight: 500;
 									width: 60px;
-									text-align: justify;
 
 									&.spacing {
 										word-spacing: 3px;
@@ -1079,7 +1093,7 @@
 									}
 
 									&+li {
-										margin-top: 1.5em;
+										margin-top: 15px;
 									}
 								}
 							}
@@ -1127,7 +1141,7 @@
 										}
 
 										&+li {
-											margin-top: .5em;
+											margin-top: 15px;
 										}
 									}
 								}
@@ -1161,7 +1175,7 @@
 					li {
 						font-weight: 300;
 						font-size: 36px;
-						line-height: 2em;
+						line-height: 72px;
 						border-bottom: 1px solid #7f7f7f;
 
 						.tit {
@@ -1191,6 +1205,7 @@
 
 						li {
 							font-size: 18px;
+							line-height: 36px;
 
 							.tit {
 								margin-right: 20px;
@@ -1228,6 +1243,14 @@
 	.content3 {
 		.row {
 			padding: 160px 0;
+
+			.content_tit {
+				letter-spacing: -9px;
+
+				@include tablet {
+					letter-spacing: -2px;
+				}
+			}
 
 			.sub_img {
 				margin-top: 70px;
@@ -1308,7 +1331,7 @@
 					li {
 						font-weight: 300;
 						font-size: 36px;
-						line-height: 2em;
+						line-height: 72px;
 						border-bottom: 1px solid #7f7f7f;
 
 						.tit {
@@ -1338,6 +1361,7 @@
 
 						li {
 							font-size: 18px;
+							line-height: 36px;
 
 							.tit {
 								margin-right: 20px;
@@ -1563,8 +1587,8 @@
 					li {
 						position: relative;
 						font-weight: 500;
-						line-height: 2.5em;
-						padding-left: 2.5em;
+						line-height: 55px;
+						padding-left: 55px;
 						font-size: 22px;
 						text-align: left;
 
@@ -1592,7 +1616,8 @@
 
 						li {
 							font-size: 12px;
-							padding-left: 1.5em;
+							padding-left: 18px;
+							line-height: 30px;
 
 							&:before {
 								top: 15px;
@@ -1644,7 +1669,7 @@
 					li {
 						font-weight: 300;
 						font-size: 36px;
-						line-height: 2em;
+						line-height: 72px;
 						border-bottom: 1px solid #7f7f7f;
 
 						.tit {
@@ -1674,6 +1699,7 @@
 
 						li {
 							font-size: 18px;
+							line-height: 36px;
 
 							.tit {
 								margin-right: 20px;
@@ -1794,7 +1820,7 @@
 					li {
 						font-weight: 300;
 						font-size: 36px;
-						line-height: 2em;
+						line-height: 72px;
 						border-bottom: 1px solid #7f7f7f;
 
 						.tit {
@@ -1824,6 +1850,7 @@
 
 						li {
 							font-size: 18px;
+							line-height: 36px;
 
 							.tit {
 								margin-right: 20px;
@@ -1844,8 +1871,20 @@
 
 	.content1 {
 		.row {
+			.txt_wrap {
+				.content_tit {
+					letter-spacing: -6px;
+				}
+			}
+
 			@include tablet {
 				padding-bottom: 0 !important;
+
+				.txt_wrap {
+					.content_tit {
+						letter-spacing: -2px;
+					}
+				}
 			}
 		}
 	}
@@ -1886,7 +1925,7 @@
 							font-weight: 300;
 							font-size: 48px;
 							color: #fff;
-							letter-spacing: -0.1em;
+							letter-spacing: -4px;
 						}
 
 						.list_tit {
@@ -1912,6 +1951,7 @@
 
 							.num {
 								font-size: 24px;
+								letter-spacing: -2px;
 							}
 
 							.list_tit {
@@ -2040,8 +2080,8 @@
 					li {
 						position: relative;
 						font-weight: 500;
-						line-height: 2.5em;
-						padding-left: 2.5em;
+						line-height: 55px;
+						padding-left: 55px;
 						font-size: 22px;
 						text-align: left;
 
@@ -2069,7 +2109,8 @@
 
 						li {
 							font-size: 12px;
-							padding-left: 1.5em;
+							padding-left: 18px;
+							line-height: 30px;
 
 							&:before {
 								top: 15px;
@@ -2170,7 +2211,7 @@
 					li {
 						font-weight: 300;
 						font-size: 36px;
-						line-height: 2em;
+						line-height: 72px;
 						border-bottom: 1px solid #7f7f7f;
 
 						.tit {
@@ -2200,6 +2241,7 @@
 
 						li {
 							font-size: 18px;
+							line-height: 36px;
 
 							.tit {
 								margin-right: 20px;
