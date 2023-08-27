@@ -86,7 +86,6 @@ $point-font: "GmarketSans", "돋움", dotum, sans-serif;
 		font-size: 18px;
 		border: 1px solid #c8cde0;
 	}
-
 }
 
 
@@ -184,6 +183,31 @@ $point-font: "GmarketSans", "돋움", dotum, sans-serif;
 }
 
 /* display */
+
+.chk_list {
+	margin-top: 30px;
+
+	li {
+		position: relative;
+		font-weight: 500;
+		line-height: 55px;
+		padding-left: 55px;
+		font-size: 22px;
+		text-align: left;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 27px;
+			left: 0;
+			width: 25px;
+			height: 21px;
+			margin-top: -10px;
+			background: url('../../assets/images/icon/icon_check.png');
+			background-size: contain;
+		}
+	}
+}
 
 @media screen and (max-width: 1199px) {
 	.d_pc {
