@@ -1922,6 +1922,19 @@ main.container {
   .sub_content .content .row.rtl .txt_wrap {
     order: 0;
   }
+  .sub_content .content .half {
+    flex-direction: column;
+    gap: 0;
+    height: auto !important;
+    padding: 65px 0 0 0 !important;
+  }
+  .sub_content .content .half .txt_wrap {
+    padding: 0 24px;
+    max-width: 100%;
+  }
+  .sub_content .content .half.rtl .txt_wrap {
+    order: initial;
+  }
 }
 .sub_content .content .txt_wrap .sub_tit {
   font-size: 20px;
@@ -3162,6 +3175,7 @@ main.container {
   height: 750px;
 }
 .c1 .content3 {
+  padding-bottom: 160px;
   padding-left: 50%;
   background-repeat: no-repeat;
   background-image: url(../images/sub/sub_c_1_3.png);
@@ -3169,6 +3183,37 @@ main.container {
 }
 .c1 .content3 .row {
   height: 800px;
+}
+@media screen and (max-width: 1199px) {
+  .c1 .content3 {
+    position: relative;
+    padding-left: 0;
+    background: none;
+    overflow: hidden;
+  }
+  .c1 .content3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    height: 20%;
+    border-radius: 50%;
+    box-shadow: 0 0 330px 270px #d6d6d6;
+  }
+  .c1 .content3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: url(../images/sub/sub_c_1_3.png) no-repeat left bottom/80% auto;
+  }
+  .c1 .content3 .row {
+    height: auto;
+  }
 }
 .c1 .content4 {
   background-color: #5c74b4;
@@ -3186,6 +3231,97 @@ main.container {
 .c1 .content4 .row .txt_wrap .txt {
   color: #fff !important;
 }
+@media screen and (max-width: 1199px) {
+  .c1 .content4 {
+    background-color: #5c74b4;
+    background-position: right bottom;
+    background-size: cover;
+  }
+}
+.c1 .content5 {
+  background-image: url(../images/sub/sub_c_1_5_1.png);
+  background-size: cover;
+  background-position: center;
+}
+.c1 .content5 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1255px;
+}
+.c1 .content5 .container .txt_wrap .content_tit,
+.c1 .content5 .container .txt_wrap .txt {
+  color: #fff !important;
+}
+.c1 .content5 .container .txt_wrap .list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1520px;
+  gap: 24px;
+  margin-top: 110px;
+}
+.c1 .content5 .container .txt_wrap .list li {
+  background-color: #a1caee;
+}
+.c1 .content5 .container .txt_wrap .list li .cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  padding: 0 20px;
+}
+.c1 .content5 .container .txt_wrap .list li .num {
+  font-family: GmarketSans, 돋움, dotum, sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  color: #fff;
+  letter-spacing: -4px;
+}
+.c1 .content5 .container .txt_wrap .list li .list_tit {
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.c1 .content5 .container .txt_wrap .list li p {
+  margin-top: 15px;
+  font-weight: 200;
+  font-size: 22px;
+  letter-spacing: -2px;
+}
+@media screen and (max-width: 1199px) {
+  .c1 .content5 .container .txt_wrap .list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+  }
+  .c1 .content5 .container .txt_wrap .list li .cont {
+    display: block;
+    height: auto;
+    padding: 20px;
+  }
+  .c1 .content5 .container .txt_wrap .list li .num {
+    font-size: 24px;
+    letter-spacing: -2px;
+  }
+  .c1 .content5 .container .txt_wrap .list li .list_tit {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .c1 .content5 .container .txt_wrap .list li p {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  .c1 .content5 .container .txt_wrap .list li p br {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .c1 .content5 .container {
+    height: auto;
+    padding: 65px 24px;
+  }
+}
 .c1 .content6 .row {
   height: 850px;
 }
@@ -3193,70 +3329,88 @@ main.container {
   flex: 0 1 50%;
   align-self: flex-end;
 }
+@media screen and (max-width: 1199px) {
+  .c1 .content6 .row {
+    padding: 65px 0 0 0 !important;
+  }
+}
 .c1 .content7 {
-  background-image: url(../images/sub/sub_b_1_6.png);
-  background-size: cover;
-  background-position: right;
-}
-.c1 .content7 .row {
-  height: 650px;
-}
-.c1 .content7 .row .txt_wrap {
-  margin-right: auto;
-}
-.c1 .content7 .row .txt_wrap .content_tit,
-.c1 .content7 .row .txt_wrap .txt {
-  color: #fff !important;
-}
-.c1 .content8 {
-  background-image: url(../images/sub/sub_b_2_6.png);
+  background-image: url(../images/sub/sub_c_1_7.png);
   background-size: cover;
   background-position: center;
 }
-.c1 .content8 .row {
-  height: 750px;
+.c1 .content7 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1259px;
 }
-.c1 .content8 .row .txt_wrap {
-  margin-right: auto;
+.c1 .content7 .container .txt_wrap .content_tit,
+.c1 .content7 .container .txt_wrap .txt {
+  color: #fff !important;
 }
-.c1 .content8 .row .txt_wrap .content_tit {
-  font-size: 50px;
+.c1 .content7 .container .txt_wrap .list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-width: 1320px;
+  gap: 50px 60px;
+  margin-top: 70px;
 }
-.c1 .content8 .row .txt_wrap .list {
-  margin-top: 65px;
-  text-align: left;
+.c1 .content7 .container .txt_wrap .list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 30px;
 }
-.c1 .content8 .row .txt_wrap .list li {
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 72px;
-  border-bottom: 1px solid #7f7f7f;
-}
-.c1 .content8 .row .txt_wrap .list li .tit {
-  font-weight: 500;
+.c1 .content7 .container .txt_wrap .list li .num {
   font-family: GmarketSans, 돋움, dotum, sans-serif;
-  color: #2c74d7;
-  margin-right: 40px;
+  font-weight: 300;
+  font-size: 48px;
+  color: #fff;
+  letter-spacing: -4px;
 }
-.c1 .content8 .row .txt_wrap .list li strong {
+.c1 .content7 .container .txt_wrap .list li .list_tit {
   font-weight: 500;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.c1 .content7 .container .txt_wrap .list li p {
+  margin-top: 15px;
+  font-weight: 200;
+  font-size: 22px;
+  letter-spacing: -2px;
 }
 @media screen and (max-width: 1199px) {
-  .c1 .content8 .row .txt_wrap {
-    margin: 0 auto;
-  }
-  .c1 .content8 .row .txt_wrap .content_tit {
-    font-size: 25px;
-  }
-  .c1 .content8 .row .txt_wrap .list {
+  .c1 .content7 .container .txt_wrap .list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
     margin-top: 30px;
   }
-  .c1 .content8 .row .txt_wrap .list li {
-    font-size: 18px;
-    line-height: 36px;
+  .c1 .content7 .container .txt_wrap .list li {
+    display: block;
+    height: auto;
+    padding: 20px;
   }
-  .c1 .content8 .row .txt_wrap .list li .tit {
-    margin-right: 20px;
+  .c1 .content7 .container .txt_wrap .list li .num {
+    font-size: 24px;
+    letter-spacing: -2px;
+  }
+  .c1 .content7 .container .txt_wrap .list li .list_tit {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .c1 .content7 .container .txt_wrap .list li p {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .c1 .content7 .container {
+    height: auto;
+    padding: 65px 24px;
   }
 }
 
@@ -3292,14 +3446,17 @@ main.container {
   color: #fff !important;
 }
 .c4 .content2 .container .txt_wrap .list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   max-width: 1420px;
   gap: 40px;
-  margin-top: 65px;
+  margin-top: 70px;
 }
 .c4 .content2 .container .txt_wrap .list li {
-  flex: 0 1 calc(33.33% - 27px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
   background: rgba(255, 255, 255, 0.6);
   padding: 30px;
 }
@@ -3311,21 +3468,26 @@ main.container {
   letter-spacing: -4px;
 }
 .c4 .content2 .container .txt_wrap .list li .list_tit {
-  font-size: 30px;
   font-weight: 500;
+  font-size: 30px;
   margin-top: 20px;
 }
 .c4 .content2 .container .txt_wrap .list li p {
-  font-size: 22px;
-  font-weight: 300;
   margin-top: 15px;
+  font-weight: 200;
+  font-size: 22px;
+  letter-spacing: -2px;
 }
 @media screen and (max-width: 1199px) {
   .c4 .content2 .container .txt_wrap .list {
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 30px;
   }
   .c4 .content2 .container .txt_wrap .list li {
-    flex: 0 1 calc(50% - 15px);
+    display: block;
+    height: auto;
+    padding: 20px;
   }
   .c4 .content2 .container .txt_wrap .list li .num {
     font-size: 24px;

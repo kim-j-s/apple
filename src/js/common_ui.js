@@ -58,7 +58,6 @@ var ui = {
     })
   },
   fxCheckScroll: function () {
-    // var beforePositon = 0;
     ui.window.$this.on({
       'load': function () {
         (ui.window.scrollTop > 0) ? $('header').addClass('active') : $('header').removeClass('active');
@@ -70,37 +69,11 @@ var ui = {
   },
 }
 
-// 공유하기 url 복사
-function CopyUrlToClipboard() {
-  $('.ps-btn-clipboard').on('click', function () {
-    var ct;
-    clearTimeout(ct);
-    var dummy = document.createElement("input");
-    var text = location.href;
-    document.body.appendChild(dummy);
-    dummy.value = text;
-    dummy.select();
-    document.execCommand("copy");
-    document.body.removeChild(dummy);
-    $('.ps-toast-msg').addClass('on');
-    ct = setTimeout(clearToast, 1500);
-  });
-}
-function clearToast() {
-  $('.ps-toast-msg').removeClass('on');
-}
-
 
 
 $(function () {
   ui.fxInit();
 
-  // 공유하기 url 복사
-  CopyUrlToClipboard();
-
-
-  // slider
-  // slide();
 
 
   AOS.init();
@@ -152,13 +125,13 @@ $(function () {
     },
     breakpoints: {
       1119: {
-          slidesPerView: 4,
-          spaceBetween: 26,
-          loop: true,
-          autoplay: {
-            delay: 0,
-          },
-          speed: 500,
+        slidesPerView: 4,
+        spaceBetween: 26,
+        loop: true,
+        autoplay: {
+          delay: 0,
+        },
+        speed: 500,
       }
     },
   });
