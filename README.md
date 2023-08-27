@@ -1,4 +1,4 @@
 # events
 
 
-https://kim-j-s.github.io/events/dist/index.html
+https://kim-j-s.github.io/apple/dist/index.html
