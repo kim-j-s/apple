@@ -3640,45 +3640,26 @@ main.container {
   height: 46.875rem;
 }
 .c1 .content3 {
-  padding-bottom: 10rem;
-  padding-left: 50%;
-  background-repeat: no-repeat;
   background-image: url(../images/sub/sub_c_1_3.png);
-  background-position: left center;
+  background-size: cover;
+  background-position: left;
+}
+@media screen and (max-width: 1199px) {
+  .c1 .content3 {
+    background-image: url(../images/sub/sub_c_1_3_m.png);
+    background-position: bottom center;
+  }
 }
 .c1 .content3 .row {
   height: 50rem;
 }
 @media screen and (max-width: 1199px) {
-  .c1 .content3 {
-    position: relative;
-    padding-left: 0;
-    background: none;
-    overflow: hidden;
-  }
-  .c1 .content3::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 40%;
-    height: 20%;
-    border-radius: 50%;
-    box-shadow: 0 0 20.625rem 16.875rem #d6d6d6;
-  }
-  .c1 .content3::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background: url(../images/sub/sub_c_1_3.png) no-repeat left bottom/80% auto;
-  }
   .c1 .content3 .row {
-    height: auto;
+    padding-bottom: 25rem !important;
   }
+}
+.c1 .content3 .row .txt_wrap {
+  margin-left: auto;
 }
 .c1 .content4 {
   background-color: #5c74b4;
@@ -3686,8 +3667,20 @@ main.container {
   background-repeat: no-repeat;
   background-position: right;
 }
+@media screen and (max-width: 1199px) {
+  .c1 .content4 {
+    background-image: url(../images/sub/sub_c_1_4_m.png);
+    background-position: bottom center;
+    background-size: cover;
+  }
+}
 .c1 .content4 .row {
   height: 40.625rem;
+}
+@media screen and (max-width: 1199px) {
+  .c1 .content4 .row {
+    padding-bottom: 25rem !important;
+  }
 }
 .c1 .content4 .row .txt_wrap {
   margin-right: auto;
@@ -3695,13 +3688,6 @@ main.container {
 .c1 .content4 .row .txt_wrap .content_tit,
 .c1 .content4 .row .txt_wrap .txt {
   color: #fff !important;
-}
-@media screen and (max-width: 1199px) {
-  .c1 .content4 {
-    background-color: #5c74b4;
-    background-position: right bottom;
-    background-size: cover;
-  }
 }
 .c1 .content5 {
   background-image: url(../images/sub/sub_c_1_5_1.png);
@@ -3813,22 +3799,29 @@ main.container {
     padding: 4.0625rem 1.5rem;
   }
 }
+.c1 .content6 {
+  background-image: url(../images/sub/sub_c_1_6.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+@media screen and (max-width: 1199px) {
+  .c1 .content6 {
+    background-image: url(../images/sub/sub_c_1_6_m.png);
+    background-position: bottom center;
+    background-size: cover;
+  }
+}
 .c1 .content6 .row {
   height: 53.125rem;
 }
-.c1 .content6 .row .img_wrap {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 50%;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-}
 @media screen and (max-width: 1199px) {
   .c1 .content6 .row {
-    padding: 4.0625rem 0 0 0 !important;
+    padding-bottom: 25rem !important;
   }
+}
+.c1 .content6 .row .txt_wrap {
+  margin-left: auto;
 }
 .c1 .content7 {
   background-image: url(../images/sub/sub_c_1_7.png);
