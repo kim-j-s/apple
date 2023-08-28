@@ -350,7 +350,8 @@ footer {
   text-align: center;
   height: 750px;
   color: #fff;
-  background: url(../images/bg_footer.png) no-repeat center;
+  // background: url(../images/bg_footer.png) no-repeat center;
+  background: url(../images/bg_footer.png) no-repeat top center / 100% 100%;
 
   >.inner {
     display: inline-flex;

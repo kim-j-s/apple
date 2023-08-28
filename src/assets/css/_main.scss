@@ -133,7 +133,8 @@ main.container {
     height: 750px;
     padding-top: 140px;
     text-align: center;
-    background: url(../images/main/main_02_01.png) no-repeat center / auto 100%;
+    // background: url(../images/main/main_02_01.png) no-repeat center / auto 100%;
+    background: url(../images/main/main_02_01.png) no-repeat center / 100% 100%;
 
     .main_content_title {
       .title {
@@ -161,7 +162,8 @@ main.container {
 
   &.ty4 {
     height: 1150px;
-    background: url(../images/main/main_04_01.png) no-repeat center / auto 100%;
+    // background: url(../images/main/main_04_01.png) no-repeat center / auto 100%;
+    background: url(../images/main/main_04_01.png) no-repeat center / 100% 100%;
 
     .main_content_title {
       width: 1520px;
