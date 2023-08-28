@@ -142,6 +142,9 @@ $(function () {
 	initSwiper();
 
 	var swiper2 = new Swiper(".msp2", {
+    autoplay: {
+      delay: 3000
+    },
 		slidesPerView: 2,
 		spaceBetween: 11,
 		speed: 500,
@@ -158,11 +161,6 @@ $(function () {
 			1119: {
 				slidesPerView: 4,
 				spaceBetween: 26,
-				loop: true,
-				autoplay: {
-					delay: 0,
-				},
-				speed: 500,
 			},
 		},
 	});
