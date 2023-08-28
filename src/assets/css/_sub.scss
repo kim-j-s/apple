@@ -116,12 +116,12 @@
 				gap: 0;
 				height: auto !important;
 				padding: 65px 0 0 0 !important;
-	
+
 				.txt_wrap {
 					padding: 0 24px;
 					max-width: 100%;
 				}
-	
+
 				&.rtl .txt_wrap {
 					order: initial;
 				}
@@ -512,7 +512,7 @@
 						font-size: 24px;
 					}
 
-					
+
 					// .list {
 					// 	display: inline-flex;
 					// 	flex-direction: column;
@@ -890,12 +890,15 @@
 			.mySwiper2Wrap {
 				position: relative;
 				padding: 0 60px;
+
 				.swiper-wrapper {
 					height: auto;
+
 					.swiper-slide {
 						height: auto;
 					}
 				}
+
 				.mySwiper2-btn {
 					top: 50%;
 					width: 38px;
@@ -903,13 +906,16 @@
 					margin-top: 0;
 					transform: translateY(-50%);
 					background-size: cover;
+
 					&::after {
 						content: none;
 					}
+
 					&.swiper-button-prev {
 						left: -38px;
 						background-image: url(../images/icon/icon_swiper_pager_l_g.png);
 					}
+
 					&.swiper-button-next {
 						right: -38px;
 						background-image: url(../images/icon/icon_swiper_pager_r_g.png);
@@ -920,19 +926,23 @@
 			.mySwiperWrap {
 				position: relative;
 				padding: 0 60px;
+
 				.mySwiper-btn {
 					top: 50%;
 					width: 38px;
 					height: 72px;
 					margin-top: 0;
-					transform: translateY(-50%);					
+					transform: translateY(-50%);
+
 					&::after {
 						content: none;
 					}
+
 					&.swiper-button-prev {
 						left: -38px;
 						background-image: url(../images/icon/icon_swiper_pager_l_g.png);
 					}
+
 					&.swiper-button-next {
 						right: -38px;
 						background-image: url(../images/icon/icon_swiper_pager_r_g.png);
@@ -973,15 +983,19 @@
 
 				.mySwiper2Wrap {
 					padding: 0 26px;
+
 					.mySwiper2-btn {
 						width: 19px;
 						height: 36px;
+
 						&::after {
 							content: none;
 						}
+
 						&.swiper-button-prev {
 							left: -2px;
 						}
+
 						&.swiper-button-next {
 							right: -2px;
 						}
@@ -997,6 +1011,7 @@
 				.mySwiper {
 					display: none;
 				}
+
 				.mySwiperWrap {
 					.mySwiper-btn {
 						display: none;
@@ -1826,8 +1841,7 @@
 			padding: 150px 0;
 		}
 
-		@include tablet {
-		}
+		@include tablet {}
 	}
 
 	.content2 {
@@ -1838,48 +1852,28 @@
 		.row {
 			height: 750px;
 		}
-		
+
 	}
 
 	.content3 {
-		padding-bottom: 160px;
-		
-		padding-left: 50%;
-		background-repeat: no-repeat;
 		background-image: url(../images/sub/sub_c_1_3.png);
-		background-position: left center;
+		background-size: cover;
+		background-position: left;
+
+		@include tablet {
+			background-image: url(../images/sub/sub_c_1_3_m.png);
+			background-position: bottom center;
+		}
 
 		.row {
 			height: 800px;
-		}
-		@include tablet {
-			position: relative;
-			padding-left: 0;
-			background: none;
-			overflow: hidden;
-			&::before {
-				content: '';
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				width: 40%;
-				height: 20%;
-				border-radius: 50%;				
-				box-shadow: 0 0 330px 270px rgba($color: #d6d6d6, $alpha: 1);
-			}
-			&::after {
-				content: '';
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				z-index: 1;
-				width: 100%;
-				height: 100%;
-				background: url(../images/sub/sub_c_1_3.png) no-repeat left bottom / 80% auto;
 
+			@include tablet {
+				padding-bottom: 400px !important;
 			}
-			.row {
-				height: auto;
+
+			.txt_wrap {
+				margin-left: auto;
 			}
 		}
 	}
@@ -1891,8 +1885,18 @@
 		background-repeat: no-repeat;
 		background-position: right;
 
+		@include tablet {
+			background-image: url(../images/sub/sub_c_1_4_m.png);
+			background-position: bottom center;
+			background-size: cover;
+		}
+
 		.row {
 			height: 650px;
+
+			@include tablet {
+				padding-bottom: 400px !important;
+			}
 
 			.txt_wrap {
 				margin-right: auto;
@@ -1903,25 +1907,20 @@
 				}
 			}
 		}
-		@include tablet {
-			// padding-bottom: 300px;
-			background-color: #5c74b4;
-			background-position: right bottom;
-			background-size: cover;
-			// background-size: auto 325px;
-		}
 	}
 
 	.content5 {
 		background-image: url(../images/sub/sub_c_1_5_1.png);
 		background-size: cover;
 		background-position: center;
+
 		.container {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			height: 1255px;
+
 			.txt_wrap {
 
 				.content_tit,
@@ -1937,7 +1936,7 @@
 					margin-top: 110px;
 
 					li {
-						
+
 						background-color: #a1caee;
 						// padding: 30px;
 
@@ -1984,11 +1983,13 @@
 									width: 100%;
 								}
 							}
+
 							.cont {
 								display: block;
 								height: auto;
 								padding: 20px;
 							}
+
 							.num {
 								font-size: 24px;
 								letter-spacing: -2px;
@@ -2002,6 +2003,7 @@
 							p {
 								font-size: 12px;
 								margin-top: 8px;
+
 								br {
 									display: none;
 								}
@@ -2020,19 +2022,28 @@
 		}
 	}
 
-	.content6 {		
+	.content6 {
+		background-image: url(../images/sub/sub_c_1_6.png);
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size: cover;
+
+		@include tablet {
+			background-image: url(../images/sub/sub_c_1_6_m.png);
+			background-position: bottom center;
+			background-size: cover;
+		}
+
 		.row {
 			height: 850px;
-			.img_wrap {
-				flex: 0 1 50%;
-				align-self: flex-end;
-			}			
-		}
-		@include tablet {
-			.row {
-				padding: 65px 0 0 0 !important;
+
+			@include tablet {
+				padding-bottom: 400px !important;
 			}
 
+			.txt_wrap {
+				margin-left: auto;
+			}
 		}
 	}
 
@@ -2104,6 +2115,7 @@
 							display: block;
 							height: auto;
 							padding: 20px;
+
 							.num {
 								font-size: 24px;
 								letter-spacing: -2px;
@@ -2226,6 +2238,7 @@
 							display: block;
 							height: auto;
 							padding: 20px;
+
 							.num {
 								font-size: 24px;
 								letter-spacing: -2px;
@@ -2289,6 +2302,7 @@
 							width: 100%;
 							height: 13px;
 							margin: 50px 0 45px;
+
 							&::before {
 								content: '';
 								position: absolute;
@@ -2303,6 +2317,7 @@
 								transform: translate(-50%, -50%);
 
 							}
+
 							&::after {
 								content: '';
 								position: absolute;
@@ -2341,6 +2356,7 @@
 							i {
 								height: 6px;
 								margin: 25px 0 22px;
+
 								&::before {
 									width: 6px;
 									height: 6px;
