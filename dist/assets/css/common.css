@@ -609,7 +609,7 @@ footer {
   text-align: center;
   height: 46.875rem;
   color: #fff;
-  background: url(../images/bg_footer.png) no-repeat center;
+  background: url(../images/bg_footer.png) no-repeat top center/100% 100%;
 }
 footer > .inner {
   display: -webkit-inline-box;
@@ -1018,7 +1018,7 @@ main.container {
   height: 46.875rem;
   padding-top: 8.75rem;
   text-align: center;
-  background: url(../images/main/main_02_01.png) no-repeat center/auto 100%;
+  background: url(../images/main/main_02_01.png) no-repeat center/100% 100%;
 }
 .main_content.ty2 .main_content_title .title {
   font-family: "GmarketSans", "돋움", dotum, sans-serif;
@@ -1040,7 +1040,7 @@ main.container {
 }
 .main_content.ty4 {
   height: 71.875rem;
-  background: url(../images/main/main_04_01.png) no-repeat center/auto 100%;
+  background: url(../images/main/main_04_01.png) no-repeat center/100% 100%;
 }
 .main_content.ty4 .main_content_title {
   width: 95rem;
