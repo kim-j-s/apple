@@ -1,5 +1,19 @@
 /* layout */
 
+#ctt, #ctt_con {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none;
+  line-height: normal !important;
+}
+#ctt {
+  > header {
+    display: none !important;
+  }
+}
+#wrap {
+  background-color: #fff;
+}
 /* header */
 header {
   position: fixed;

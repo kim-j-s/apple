@@ -230,6 +230,9 @@ main.container {
 
   .item {
     position: relative;
+    img {
+      display: block;
+    }
 
     .item_cont {
       position: absolute;
@@ -617,6 +620,9 @@ main.container {
 
     a {
       color: #333;
+      img {
+        display: block;
+      }
 
       >.who {
         display: flex;

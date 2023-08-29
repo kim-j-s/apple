@@ -251,6 +251,21 @@
 /* layout */
 /* layout */
 /* layout */
+#ctt, #ctt_con {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none;
+  line-height: normal !important;
+}
+
+#ctt > header {
+  display: none !important;
+}
+
+#wrap {
+  background-color: #fff;
+}
+
 /* header */
 header {
   position: fixed;
@@ -1099,6 +1114,9 @@ main.container {
 .main_content_item01 .item {
   position: relative;
 }
+.main_content_item01 .item img {
+  display: block;
+}
 .main_content_item01 .item .item_cont {
   position: absolute;
   bottom: 0;
@@ -1477,6 +1495,9 @@ main.container {
 }
 .main_content_item05_doctor .item a {
   color: #333;
+}
+.main_content_item05_doctor .item a img {
+  display: block;
 }
 .main_content_item05_doctor .item a > .who {
   display: -webkit-box;
