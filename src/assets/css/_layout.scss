@@ -11,6 +11,23 @@
     display: none !important;
   }
 }
+
+.ctt_admin {
+  position: fixed;
+  right: 60px;
+  bottom: 50px;
+  z-index: 200;
+}
+@include tablet {
+  .ctt_admin {
+    position: fixed;
+    right: 5px;
+    bottom: 22px;
+    z-index: 200;
+  }
+}
+
+
 #wrap {
   background-color: #fff;
 }
