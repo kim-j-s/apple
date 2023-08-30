@@ -11,6 +11,7 @@
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -123,9 +124,9 @@ html {
 
 body {
   position: relative;
-  min-width: 95rem;
+  min-width: 1520px;
   font-family: "HelveticaNeue", "Noto Sans Kr", sans-serif;
-  letter-spacing: -0.025rem;
+  letter-spacing: -0.4px;
   color: #333;
   word-break: keep-all;
   overflow-wrap: anywhere;
@@ -190,7 +191,7 @@ textarea {
 }
 
 select {
-  -webkit-border-radius: 0;
+  -webkit-border-radius: 0px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -208,38 +209,10 @@ textarea {
 
 /* placeholder */
 /* IE10 이상을 위한 css */
-::-webkit-input-placeholder {
-  font-family: "GmarketSans", "돋움", dotum, sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  color: #575757;
-  opacity: 1;
-}
-::-moz-placeholder {
-  font-family: "GmarketSans", "돋움", dotum, sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  color: #575757;
-  opacity: 1;
-}
-:-ms-input-placeholder {
-  font-family: "GmarketSans", "돋움", dotum, sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  color: #575757;
-  opacity: 1;
-}
-::-ms-input-placeholder {
-  font-family: "GmarketSans", "돋움", dotum, sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  color: #575757;
-  opacity: 1;
-}
 ::placeholder {
   font-family: "GmarketSans", "돋움", dotum, sans-serif;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 24px;
   color: #575757;
   opacity: 1;
 }
@@ -255,24 +228,8 @@ textarea {
 @media screen and (max-width: 1199px) {
   /* placeholder */
   /* IE10 이상을 위한 css */
-  ::-webkit-input-placeholder {
-    font-size: 0.75rem;
-    opacity: 1;
-  }
-  ::-moz-placeholder {
-    font-size: 0.75rem;
-    opacity: 1;
-  }
-  :-ms-input-placeholder {
-    font-size: 0.75rem;
-    opacity: 1;
-  }
-  ::-ms-input-placeholder {
-    font-size: 0.75rem;
-    opacity: 1;
-  }
   ::placeholder {
-    font-size: 0.75rem;
+    font-size: 12px;
     opacity: 1;
   }
 }
