@@ -79,7 +79,11 @@
 
 			.txt_wrap {
 				max-width: 720px;
-			}
+				&.advantages {
+					max-width: 720px;
+					width: 50%;
+				}
+			}		
 
 			&.rtl .txt_wrap {
 				order: 1;
@@ -110,6 +114,11 @@
 				.txt_wrap {
 					padding: 0 24px;
 					max-width: 100%;
+					&.advantages {
+						padding: 0 24px;
+						max-width: 100%;
+						width: 95%;
+					}
 				}
 
 				&.rtl .txt_wrap {
@@ -1505,6 +1514,7 @@
 			background-image: url(../images/sub/sub_ty21_1.png);
 			background-size: cover;
 			background-position: center;
+			margin-top: 100px;
 
 			.container {
 				display: flex;
@@ -1619,12 +1629,26 @@
 				}
 			}
 
+			.pic1 {
+				background: url("../../assets/images/sub/b3_10.png");
+				background-position: right bottom;
+				background-repeat: no-repeat;
+				height: 850px;
+			}
+
 			@include tablet {
 				.row {
 					padding-bottom: 350px !important;
 					background-size: 500px;
 					background-position: center bottom;
 				}
+
+				.pic1 {
+					padding-bottom: 450px !important;
+					background-size: 500px;
+					background-position: center bottom;
+				}
+
 			}
 		}
 
@@ -1850,13 +1874,14 @@
 	
 		&.cont_ty29 {
 			background-image: url(../images/sub/sub_ty29_1.png);
+			background-position: bottom;
 			background-repeat: no-repeat;
-			background-position: left;
 	
 			@include tablet {
 				background-image: url(../images/sub/sub_ty29_1_m.png);
-				background-position: bottom left 70%;
-				background-size: 80% auto;
+				padding-bottom: 200px !important;
+				background-size: 500px;
+				background-position: center bottom;
 			}
 	
 			.row {

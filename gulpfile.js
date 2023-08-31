@@ -93,9 +93,13 @@ function devStyles() {
   ])
     .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
 
+    .pipe(postcss([
+      autoprefixer(),
+      pxtorem(px2rem_settings)
+    ]))
     // .pipe(postcss([
-    //   autoprefixer(),
-    //   pxtorem(px2rem_settings)
+    //   autoprefixer()
+    //   // pxtorem(px2rem_settings)
     // ]))
     .pipe(dest(options.paths.dist.css));
 }

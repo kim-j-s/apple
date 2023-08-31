@@ -164,4 +164,13 @@ $(function () {
 			},
 		},
 	});
+
+	// 팝업
+	$('.open_pop').on('click', function(){
+		$('.dg_popup').addClass('active');
+	});
+	$('.dg_popup_wrap_close').on('click', function(){
+		$('.dg_popup').removeClass('active');
+	});
+
 });

@@ -88,8 +88,6 @@ $point-font: "GmarketSans", "돋움", dotum, sans-serif;
 	}
 }
 
-
-
 /* common btn */
 
 /* common input */
@@ -183,6 +181,63 @@ $point-font: "GmarketSans", "돋움", dotum, sans-serif;
 }
 
 /* display */
+
+/* table */
+.tbl {
+	table {
+		table-layout: fixed;
+		width: 100%;
+		thead {
+			tr {
+				th {
+					padding: 10px;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 24px;
+					text-align: left;
+					border: 1px solid #333;
+					background-color: #f2f2f2;
+				}
+			}
+		}
+		tbody {
+			tr {
+				td {
+					vertical-align: middle;
+					padding: 10px;
+					font-size: 16px;
+					line-height: 24px;
+					text-align: left;
+					border: 1px solid #333;
+					word-break: break-all;
+				}
+			}
+		}
+	}
+}
+@include tablet {
+	.tbl {
+		table {
+			thead {
+				tr {
+					th {
+						font-size: 12px;
+						line-height: 16px;
+					}
+				}
+			}
+			tbody {
+				tr {
+					td {
+						font-size: 12px;
+						line-height: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+/* table */
 
 .chk_list {
 	margin-top: 30px;
